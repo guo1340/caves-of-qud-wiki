@@ -31,7 +31,7 @@
 
   function adSlot(kind) {
     const banner = kind === 'banner';
-    return `<aside class="ad-slot ad-${esc(kind)}" aria-label="Advertisement"><span class="ad-label">Advertisement</span><ins class="adsbygoogle" style="display:block;${banner ? 'width:100%;height:90px;' : ''}" data-ad-client="ca-pub-1319817671788428" data-ad-slot="6141169453" ${banner ? '' : 'data-ad-format="auto"'} data-full-width-responsive="true"></ins></aside>`;
+    return `<div class="ad-slot ad-${esc(kind)}" role="complementary" aria-label="Advertisement"><span class="ad-label">Archive Notice</span><ins class="adsbygoogle" style="display:block;${banner ? 'width:100%;height:90px;' : ''}" data-ad-client="ca-pub-1319817671788428" data-ad-slot="6141169453" ${banner ? '' : 'data-ad-format="auto"'} data-full-width-responsive="true"></ins></div>`;
   }
   function loadAds() {
     if (!window.adsbygoogle) return;
@@ -44,8 +44,24 @@
     return `<aside class="source-notes"><div class="src-head">Source Packet</div><div class="src-meta"><span><strong>Last updated:</strong> ${esc(D.site.lastUpdated)}</span><span><strong>Version note:</strong> ${esc(D.site.buildStatus)}</span></div><ul>${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a> - ${esc(s.note)}</li>`).join('')}</ul><p>Qud is dense and version-sensitive. Treat exact numbers, spawn behavior and mod compatibility as things to verify when a run depends on them.</p></aside>`;
   }
   function relatedBlock(p) {
-    if (!p.related || !p.related.length) return '';
-    return `<nav class="related" aria-label="Related pages"><h3>Related Archive Records</h3><div class="related-grid">${p.related.map((r) => `<a href="${esc(r.href)}">${esc(r.label)}</a>`).join('')}</div></nav>`;
+    const related = relatedPages(p);
+    if (!related.length) return '';
+    return `<nav class="related" aria-label="Related pages"><h3>Related Archive Records</h3><div class="related-grid">${related.map((r) => `<a href="${esc(r.href)}">${esc(r.label)}</a>`).join('')}</div></nav>`;
+  }
+  function relatedPages(p, count = 5) {
+    const sameCategory = D.pages
+      .filter((candidate) => candidate.category === p.category && candidate.id !== p.id)
+      .slice(0, count)
+      .map((candidate) => ({ label: candidate.title, href: `/${candidate.category}/${candidate.id}` }));
+    const explicit = (p.related || [])
+      .filter((r) => r && r.href && r.href !== `/${p.category}`)
+      .map((r) => ({ label: r.label, href: r.href }));
+    const seen = new Set();
+    return [...explicit, ...sameCategory].filter((item) => {
+      if (seen.has(item.href)) return false;
+      seen.add(item.href);
+      return true;
+    }).slice(0, count);
   }
   function sectionsHTML(sections) {
     return sections.map((s) => `<section class="article-section"><h3>${esc(s.h)}</h3>${s.body || ''}${s.list ? `<ul>${s.list.map((x) => `<li>${esc(x)}</li>`).join('')}</ul>` : ''}</section>`).join('');
@@ -91,7 +107,7 @@
   }
 
   function renderLeftNav(active) {
-    leftNav.innerHTML = `<h3>Archive Index</h3><ul>${D.categories.map((c) => `<li><a href="/${esc(c.id)}" data-r="/${esc(c.id)}">${esc(c.title)}</a></li>`).join('')}</ul><h3>Site Info</h3><ul><li><a href="/about" data-r="/about">About</a></li><li><a href="/privacy-policy" data-r="/privacy-policy">Privacy Policy</a></li><li><a href="/contact" data-r="/contact">Contact</a></li></ul>${adSlot('half-page')}`;
+    leftNav.innerHTML = `<h3>Zone Index</h3><ul>${D.categories.map((c) => `<li><a href="/${esc(c.id)}" data-r="/${esc(c.id)}"><span>${esc(c.title.slice(0, 2).toUpperCase())}</span>${esc(c.title)}</a></li>`).join('')}</ul><h3>Site Info</h3><ul><li><a href="/about" data-r="/about"><span>AB</span>About</a></li><li><a href="/privacy-policy" data-r="/privacy-policy"><span>PP</span>Privacy Policy</a></li><li><a href="/contact" data-r="/contact"><span>CT</span>Contact</a></li></ul>`;
     leftNav.querySelectorAll('a').forEach((a) => {
       const r = a.getAttribute('data-r');
       if (active === r || (r !== '/' && active.startsWith(r + '/'))) a.classList.add('active');
@@ -99,12 +115,12 @@
   }
   function renderRightNav() {
     const fact = D.facts[Math.floor(Math.random() * D.facts.length)];
-    rightNav.innerHTML = `<h3>Popular Queries</h3><ul><li><a href="/mutations/best-mutations">Best Mutations</a></li><li><a href="/builds/best-builds">Best Builds</a></li><li><a href="/builds/true-kin-guide">True Kin Guide</a></li><li><a href="/builds/esper-build">Esper Build</a></li><li><a href="/cybernetics/best-cybernetics">Best Cybernetics</a></li><li><a href="/factions/reputation-guide">Reputation Guide</a></li><li><a href="/maps/golgotha">Golgotha Guide</a></li></ul><h3>Daily Qud Fact</h3><p class="terminal-note">${esc(fact)}</p>${adSlot('rectangle')}`;
+    rightNav.innerHTML = `<h3>Popular Queries</h3><ul><li><a href="/mutations/best-mutations"><span>MU</span>Best Mutations</a></li><li><a href="/builds/best-builds"><span>BU</span>Best Builds</a></li><li><a href="/builds/true-kin-guide"><span>TK</span>True Kin Guide</a></li><li><a href="/builds/esper-build"><span>ES</span>Esper Build</a></li><li><a href="/cybernetics/best-cybernetics"><span>CY</span>Best Cybernetics</a></li><li><a href="/factions/reputation-guide"><span>FA</span>Reputation Guide</a></li><li><a href="/maps/golgotha"><span>GO</span>Golgotha Guide</a></li></ul><h3>Daily Qud Fact</h3><p class="terminal-note">${esc(fact)}</p>`;
   }
 
   function renderHome() {
     const featured = ['beginner-guide', 'best-mutations', 'best-builds', 'true-kin-guide', 'esper-build', 'golgotha'].map((id) => D.pages.find((p) => p.id === id)).filter(Boolean);
-    main.innerHTML = `<section class="hero"><img src="/assets/images/hero/homepage-hero.svg" alt="Ancient Caves of Qud terminal archive scene" /><div class="hero-content"><span class="hero-kicker">Ancient terminal archive</span><h1>Caves of Qud Wiki</h1><p>Live and drink, traveler. Explore the ancient salt deserts, cybernetic ruins, mutations, factions, relics and impossible civilizations of Qud.</p><div class="hero-buttons"><a class="btn" href="/beginner-guide/beginner-guide">Beginner Guide</a><a class="btn" href="/mutations">Mutations</a><a class="btn" href="/builds">Character Builds</a><a class="btn" href="/factions">Factions</a><a class="btn" href="/maps">Maps</a><a class="btn" href="/lore">Lore</a></div></div></section>${adSlot('banner')}<h2 class="section-head">Archive Categories</h2><div class="cards cat-cards">${D.categories.map((c) => `<a class="card cat-card" href="/${esc(c.id)}"><span class="ico">${icon(c.icon)}</span><h4>${esc(c.title)}</h4><p>${esc(c.summary)}</p></a>`).join('')}</div><div class="home-grid"><section class="page"><h2>Core Traffic Records</h2><div class="breadcrumb">Pages travelers search for first.</div><ul class="link-list">${featured.map((p) => `<li><a href="/${esc(p.category)}/${esc(p.id)}">${esc(p.title)}<span>${esc(p.summary)}</span></a></li>`).join('')}</ul></section><section class="page terminal-panel"><h2>Build Survival Loop</h2><div class="breadcrumb">A compact machine-prayer for not dying.</div><ol><li>Start with one damage plan and one escape plan.</li><li>Use villages and merchants as anchors.</li><li>Respect disease, reputation and terrain as real threats.</li><li>Upgrade through skills, artifacts, cybernetics or mutations deliberately.</li><li>Leave before curiosity becomes a tomb inscription.</li></ol></section></div>${adSlot('in-article')}`;
+    main.innerHTML = `<section class="hero"><img src="/assets/images/hero/homepage-hero.svg" alt="Tile-map Caves of Qud archive scene with ruins, desert, plants and chrome machinery" /><div class="hero-content"><span class="hero-kicker">Live and drink // terminal awake</span><h1>Caves of Qud Wiki</h1><p>A chromed archive for salt dunes, sentient plants, mutations, cybernetics, factions, relics and the thousand-year civilizations under Qud.</p><div class="hero-buttons"><a class="btn" href="/beginner-guide/beginner-guide">Beginner Guide</a><a class="btn" href="/mutations">Mutations</a><a class="btn" href="/builds">Character Builds</a><a class="btn" href="/factions">Factions</a><a class="btn" href="/maps">Maps</a><a class="btn" href="/lore">Lore</a></div></div></section>${adSlot('banner')}<h2 class="section-head">Archive Categories</h2><div class="cards cat-cards">${D.categories.map((c) => `<a class="card cat-card" href="/${esc(c.id)}"><span class="ico">${icon(c.icon)}</span><h4>${esc(c.title)}</h4><p>${esc(c.summary)}</p></a>`).join('')}</div><div class="home-grid"><section class="page"><h2>Core Traffic Records</h2><div class="breadcrumb">Pages travelers search for first.</div><ul class="link-list">${featured.map((p) => `<li><a href="/${esc(p.category)}/${esc(p.id)}">${esc(p.title)}<span>${esc(p.summary)}</span></a></li>`).join('')}</ul></section><section class="page terminal-panel"><h2>Build Survival Loop</h2><div class="breadcrumb">A compact machine-prayer for not dying.</div><ol><li>Start with one damage plan and one escape plan.</li><li>Use villages and merchants as anchors.</li><li>Respect disease, reputation and terrain as real threats.</li><li>Upgrade through skills, artifacts, cybernetics or mutations deliberately.</li><li>Leave before curiosity becomes a tomb inscription.</li></ol></section></div>${adSlot('in-article')}`;
   }
   function renderCategory(id) {
     const c = category(id);

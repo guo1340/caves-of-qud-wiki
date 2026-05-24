@@ -1,0 +1,8 @@
+{
+  "name": "caves-of-qud-wiki",
+  "compatibility_date": "2025-01-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "single-page-application"
+  }
+}

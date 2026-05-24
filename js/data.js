@@ -1,0 +1,155 @@
+window.WikiData = {
+  site: {
+    name: 'Caves of Qud Wiki',
+    shortName: 'Caves of Qud Wiki',
+    baseUrl: 'https://cavesofqud.gamewikihub.com',
+    titleSuffix: 'Caves of Qud Wiki',
+    defaultDescription: 'A searchable Caves of Qud wiki for beginner guides, mutations, builds, skills, cybernetics, factions, maps, lore, items, creatures and mods.',
+    defaultOgImage: '/assets/images/hero/homepage-hero.svg',
+    lastUpdated: '2026-05-24',
+    buildStatus: 'General release guidance; verify exact values against your installed game version.'
+  },
+
+  sourceRegistry: {
+    officialSite: { label: 'Caves of Qud Official Site', url: 'https://www.cavesofqud.com/', note: 'Official game overview and update context.' },
+    officialWiki: { label: 'Caves of Qud Official Wiki', url: 'https://wiki.cavesofqud.com/', note: 'Primary reference for mechanics, items, factions and creatures.' },
+    steam: { label: 'Caves of Qud Steam Page', url: 'https://store.steampowered.com/app/333640/Caves_of_Qud/', note: 'Official store description and platform information.' },
+    community: { label: 'Caves of Qud Community', url: 'https://www.reddit.com/r/cavesofqud/', note: 'Community strategy discussion and build discovery.' }
+  },
+
+  categories: [
+    { id: 'beginner-guide', title: 'Beginner Guide', icon: 'compass', summary: 'Starting choices, water economy, first village routes, combat basics and early mistakes.' },
+    { id: 'mutations', title: 'Mutations', icon: 'dna', summary: 'Physical mutations, mental mutations, best picks, combos, tier lists and leveling.' },
+    { id: 'builds', title: 'Character Builds', icon: 'profile', summary: 'Beginner builds, Esper builds, True Kin builds, gunslingers, tinkers and hybrids.' },
+    { id: 'skills', title: 'Skills', icon: 'nodes', summary: 'Skill trees, costs, progression paths, combat skills, merchanting and tinkering.' },
+    { id: 'cybernetics', title: 'Cybernetics', icon: 'chip', summary: 'Implants, slots, True Kin economy, farming routes and cybernetic tier advice.' },
+    { id: 'factions', title: 'Factions', icon: 'sigil', summary: 'Reputation, water rituals, alliances, hostility and faction-specific rewards.' },
+    { id: 'maps', title: 'Maps & Regions', icon: 'map', summary: 'Joppa, Six Day Stilt, Golgotha, Bethesda Susa, jungles, marshes and ruins.' },
+    { id: 'items', title: 'Items', icon: 'cube', summary: 'Weapons, armor, artifacts, relics, injectors, grenades, tonics and trade goods.' },
+    { id: 'creatures', title: 'Creatures', icon: 'eye', summary: 'Threat levels, biomes, resistances, weaknesses, loot and special attacks.' },
+    { id: 'lore', title: 'Lore', icon: 'scroll', summary: 'Sultan histories, ancient civilizations, religious groups, ruins and impossible records.' },
+    { id: 'mods', title: 'Mods', icon: 'gear', summary: 'Best mods, UI mods, QoL mods, content mods, compatibility and installation.' },
+    { id: 'updates', title: 'Updates', icon: 'signal', summary: 'Patch notes, version changes, developer news and compatibility watchpoints.' }
+  ],
+
+  pages: [
+    article('beginner-guide', 'beginner-guide', 'Beginner Guide', 'Live and drink, traveler. This route teaches the first decisions that keep new characters from becoming dust.', ['Choose caste or calling deliberately', 'Understand Mutant vs True Kin', 'Respect water as currency and survival resource', 'Learn when to run from bad fights', 'Use early villages and merchants as anchors']),
+    article('beginner-guide', 'starting-builds', 'Starting Builds', 'A good starting build gives you one reliable answer to danger and one reliable plan for growth.', ['Beginner Mutant', 'Beginner True Kin', 'Ranged safety', 'Melee durability', 'Escape tools']),
+    article('beginner-guide', 'water-economy', 'Water Economy', 'Water is food, money, reputation pressure and route planning all at once.', ['Trade value', 'Weight burden', 'Desert travel', 'Merchant planning', 'When to spend']),
+    article('beginner-guide', 'combat-basics', 'Combat Basics', 'Qud combat rewards positioning, patience and knowing when a monster is not your problem today.', ['Line of sight', 'Kiting', 'Corners', 'Status effects', 'Escape consumables']),
+    article('beginner-guide', 'reputation-basics', 'Reputation Basics', 'Reputation quietly decides who sells to you, who tolerates you and who turns a region hostile.', ['Faction attitudes', 'Water rituals', 'Schrodinger pages', 'Quest changes', 'Hostility risk']),
+    article('beginner-guide', 'beginner-mistakes', 'Beginner Mistakes', 'Most early deaths are information failures disguised as bad luck.', ['Exploring too deep', 'Ignoring disease', 'Fighting slumberlings', 'Carrying too much water', 'Forgetting escape tools']),
+
+    article('mutations', 'best-mutations', 'Best Mutations', 'The best mutations solve survival problems before they become emergencies.', ['Mobility', 'Escape', 'Damage scaling', 'Defense', 'Utility']),
+    article('mutations', 'physical-mutations', 'Physical Mutations', 'Physical mutations create durable, kinetic characters who solve problems with bodies adapted for Qud.', ['Multiple Arms', 'Wings', 'Regeneration', 'Carapace', 'Heightened Quickness']),
+    article('mutations', 'mental-mutations', 'Mental Mutations', 'Mental mutations are power, information and danger bound together.', ['Clairvoyance', 'Teleportation', 'Temporal Fugue', 'Light Manipulation', 'Pyrokinesis']),
+    article('mutations', 'mutation-combos', 'Mutation Combos', 'Strong mutation builds are less about one power and more about overlapping answers.', ['Mobility plus ranged damage', 'Vision plus teleportation', 'Extra limbs plus melee', 'Regeneration plus armor', 'Crowd control plus escape']),
+    article('mutations', 'mutation-tier-list', 'Mutation Tier List', 'Tier lists are useful only when they explain what problem each mutation solves.', ['Beginner value', 'Scaling', 'Risk', 'Synergy', 'Late-game relevance']),
+    article('mutations', 'temporal-fugue', 'Temporal Fugue', 'Temporal Fugue is a magnificent answer that can create magnificent problems.', ['Clone behavior', 'Friendly fire risk', 'Build synergy', 'Open space', 'Escape planning']),
+    article('mutations', 'teleportation', 'Teleportation', 'Teleportation turns many lethal situations into survivable mistakes.', ['Escape range', 'Cooldown planning', 'Vision synergy', 'Mishap risk', 'Emergency use']),
+
+    article('builds', 'best-builds', 'Best Builds', 'The best builds have a plan for early survival, midgame growth and late-game nonsense.', ['Beginner safety', 'Damage plan', 'Escape plan', 'Economy', 'Endgame scaling']),
+    article('builds', 'esper-build', 'Esper Build', 'Espers are brilliant, fragile and increasingly haunted by the power they gather.', ['Ego scaling', 'Mental mutations', 'Psychic hunters', 'Defensive tools', 'Late-game control']),
+    article('builds', 'true-kin-guide', 'True Kin Guide', 'True Kin trade mutation chaos for cybernetic certainty and resource discipline.', ['Calling choice', 'Cybernetic credit wedges', 'Implant slots', 'Tinkering', 'Equipment priority']),
+    article('builds', 'gunslinger-build', 'Gunslinger Build', 'A gunslinger survives by controlling range before Qud controls the fight.', ['Ammo economy', 'Pistols', 'Rifles', 'Mobility', 'Cover']),
+    article('builds', 'tinker-build', 'Tinker Build', 'Tinkers turn scrap, bits and recipes into tactical inevitability.', ['Tinkering skills', 'Disassembly', 'Grenades', 'Artifacts', 'Bit economy']),
+    article('builds', 'melee-build', 'Melee Build', 'Melee builds must be honest about armor, positioning and what not to stand beside.', ['Weapon tree', 'Toughness', 'Charge risk', 'Armor', 'Status counters']),
+
+    article('skills', 'best-skills', 'Best Skills', 'The best skills expand your decisions without draining points from your core plan.', ['Survival skills', 'Weapon skills', 'Tinkering', 'Persuasion', 'Wayfaring']),
+    article('skills', 'skill-progression', 'Skill Progression', 'Skill order should follow your build problems, not a universal checklist.', ['Early defense', 'Economy skills', 'Travel skills', 'Damage upgrades', 'Late-game utility']),
+    article('skills', 'tinkering', 'Tinkering', 'Tinkering rewards players who keep scraps, recipes and curiosity organized.', ['Tinker I', 'Tinker II', 'Tinker III', 'Bits', 'Schematics']),
+    article('skills', 'persuasion', 'Persuasion', 'Persuasion can turn Qud from a combat map into a social machine.', ['Proselytize', 'Berate', 'Merchant value', 'Companions', 'Faction play']),
+    article('skills', 'long-blades', 'Long Blades', 'Long blades offer flexible stances for duelists who understand tempo.', ['Stances', 'Dueling', 'PV pressure', 'Mobility', 'Defense']),
+    article('skills', 'rifles', 'Rifles', 'Rifles are the clean answer to threats you prefer not to meet in melee.', ['Range', 'Ammo', 'Penetration', 'Positioning', 'Late-game firearms']),
+
+    article('cybernetics', 'best-cybernetics', 'Best Cybernetics', 'The best cybernetics give True Kin characters reliable answers to Qud problems.', ['Night vision', 'Motorized treads', 'Giant hands', 'Force lathe', 'Matter recompositor']),
+    article('cybernetics', 'implant-slots', 'Implant Slots', 'Slots are the hidden budget behind every serious True Kin plan.', ['Body slots', 'Conflicts', 'Credit wedges', 'Removal risk', 'Build planning']),
+    article('cybernetics', 'true-kin-cybernetics', 'True Kin Cybernetics', 'Cybernetics make True Kin less random and more logistical than mutants.', ['Starting implants', 'Economy', 'Compatibility', 'Progression', 'Late-game upgrades']),
+    article('cybernetics', 'implant-farming', 'Implant Farming', 'Finding good implants is exploration, trade and danger management.', ['Ruins', 'Vendors', 'Credit wedges', 'Risk routes', 'Inventory planning']),
+    article('cybernetics', 'motorized-treads', 'Motorized Treads', 'Motorized treads change positioning, travel and escape math.', ['Movement speed', 'Slot cost', 'Build fit', 'Combat value', 'Weaknesses']),
+
+    article('factions', 'reputation-guide', 'Reputation Guide', 'Reputation is Qud remembering what you did and who you honored.', ['Water rituals', 'Faction enemies', 'Reputation gains', 'Pages', 'Quest effects']),
+    article('factions', 'water-rituals', 'Water Rituals', 'Water rituals are the social technology of Qud.', ['Eligible NPCs', 'Secrets', 'Reputation exchange', 'Skill learning', 'Faction planning']),
+    article('factions', 'mechanimists', 'Mechanimists', 'The Mechanimists turn devotion, chrome and pilgrimage into power.', ['Six Day Stilt', 'Temples', 'Reputation', 'NPCs', 'Rewards']),
+    article('factions', 'barathrumites', 'Barathrumites', 'The Barathrumites are central to the main quest and the machinery of survival.', ['Grit Gate', 'Quests', 'Rewards', 'Lore', 'Alliances']),
+    article('factions', 'putus-templar', 'Putus Templar', 'The Putus Templar are a faction-shaped warning sign for many characters.', ['Hostility', 'True Kin ideology', 'Danger', 'Loot', 'Reputation']),
+    article('factions', 'goatfolk', 'Goatfolk', 'Goatfolk reputation can turn the jungle from a murder corridor into a negotiation.', ['Jungle danger', 'Reputation', 'Villages', 'Loot', 'Threats']),
+
+    article('maps', 'joppa', 'Joppa', 'Joppa is the classic first anchor: humble, useful and close to early lessons.', ['Starting quests', 'Vendors', 'Nearby danger', 'Water', 'Progression route']),
+    article('maps', 'six-day-stilt', 'Six Day Stilt', 'The Six Day Stilt is pilgrimage, market, temple and survival opportunity.', ['Merchants', 'Mechanimists', 'Water rituals', 'Supplies', 'Travel danger']),
+    article('maps', 'golgotha', 'Golgotha Guide', 'Golgotha is among the first true tests of survival in Qud.', ['Recommended level', 'Disease risk', 'Conveyors', 'Verticality', 'Escape plan']),
+    article('maps', 'bethesda-susa', 'Bethesda Susa', 'Bethesda Susa tests cold, combat readiness and long-form dungeon planning.', ['Cold danger', 'Faction context', 'Threats', 'Supplies', 'Quest relevance']),
+    article('maps', 'salt-marshes', 'Salt Marshes', 'The Salt Marshes teach early travel, snapjaw pressure and water discipline.', ['Early enemies', 'Terrain', 'Loot', 'Routes', 'Risk']),
+    article('maps', 'rainbow-wood', 'Rainbow Wood', 'The Rainbow Wood is beautiful, strange and not especially interested in your confidence.', ['Oozes', 'Terrain', 'Lore', 'Threat level', 'Preparation']),
+
+    article('items', 'best-weapons', 'Best Weapons', 'The best weapon is the one your build can support under pressure.', ['Penetration', 'Accuracy', 'Ammo', 'Skill support', 'Enemy armor']),
+    article('items', 'armor-guide', 'Armor Guide', 'Armor is survival math: AV, DV, weight and what threats still bypass it.', ['AV', 'DV', 'Weight', 'Resistances', 'Mobility']),
+    article('items', 'artifacts', 'Artifacts', 'Artifacts turn curiosity into power if you survive identifying them.', ['Identification', 'Tinkering', 'Energy cells', 'Risk', 'Trade value']),
+    article('items', 'injectors', 'Injectors', 'Injectors are panic buttons, preparation tools and occasional liabilities.', ['Salve', 'Ubernostrum', 'Phase', 'Tonics', 'Side effects']),
+    article('items', 'relics', 'Relics', 'Relics are story-bearing power sources with build-defining consequences.', ['Generation', 'Stats', 'Lore', 'Locations', 'Build fit']),
+
+    article('creatures', 'chrome-pyramids', 'Chrome Pyramids', 'Chrome pyramids are less enemies than weather events made of weapons.', ['Threat level', 'Missiles', 'Armor', 'Avoidance', 'Late-game answers']),
+    article('creatures', 'slumberlings', 'Slumberlings', 'Slumberlings are a beginner lesson in not waking the wrong problem.', ['Sleep state', 'Melee danger', 'Avoidance', 'Loot temptation', 'Escape']),
+    article('creatures', 'goatfolk', 'Goatfolk Creatures', 'Goatfolk can be a faction problem, a jungle problem or a build check.', ['Threats', 'Reputation', 'Terrain', 'Loot', 'Weaknesses']),
+    article('creatures', 'snapjaws', 'Snapjaws', 'Snapjaws are early pressure, loot sources and a reminder that groups matter.', ['Early combat', 'Equipment', 'Numbers', 'Kiting', 'Loot']),
+    article('creatures', 'madpoles', 'Madpoles', 'Madpoles are proof that water can be more dangerous than thirst.', ['Water threat', 'Dismemberment', 'Avoidance', 'Ranged answers', 'Panic prevention']),
+
+    article('lore', 'history-of-qud', 'History of Qud', 'Qud is layered with civilizations, sultans, machines and histories that refuse to stay buried.', ['Ancient Earth', 'Sultans', 'Ruins', 'Religions', 'Artifacts']),
+    article('lore', 'sultan-history', 'Sultan History', 'Sultan histories are procedural scripture, archaeology and treasure map in one.', ['Historic sites', 'Relics', 'Narrative fragments', 'Procedural records', 'Exploration']),
+    article('lore', 'religious-groups', 'Religious Groups', 'Religion in Qud is practical, strange and tied to real power.', ['Mechanimists', 'Pilgrimage', 'Ritual', 'Temples', 'Faction ties']),
+    article('lore', 'important-npcs', 'Important NPCs', 'Important NPCs often carry quests, secrets and the machinery of larger stories.', ['Quest hubs', 'Water rituals', 'Faction value', 'Lore', 'Rewards']),
+
+    article('mods', 'best-mods', 'Best Mods', 'The best mods expand Qud without flattening its mystery.', ['UI helpers', 'Content mods', 'Balance', 'Compatibility', 'Load order']),
+    article('mods', 'ui-mods', 'UI Mods', 'UI mods should clarify dense information without erasing uncertainty.', ['Readability', 'Inventory', 'Map tools', 'Accessibility', 'Version checks']),
+    article('mods', 'qol-mods', 'QoL Mods', 'QoL mods reduce friction while preserving the strange teeth of Qud.', ['Automation', 'Information', 'Inventory', 'Travel', 'Compatibility']),
+    article('mods', 'installation-guide', 'Mod Installation Guide', 'Modding Qud works best with version discipline and tested saves.', ['Finding mods', 'Install location', 'Compatibility', 'Backups', 'Troubleshooting']),
+
+    article('updates', 'patch-notes', 'Patch Notes', 'Patch notes matter because Qud systems, balance and mod compatibility can shift meaningfully.', ['Version changes', 'New content', 'Balance', 'Bug fixes', 'Mod impact']),
+    article('updates', 'recent-updates', 'Recent Updates', 'Recent updates help returning players relearn what the archive has remembered.', ['Major changes', 'Compatibility', 'New mechanics', 'Community discoveries', 'Article refreshes'])
+  ],
+
+  facts: [
+    'Water is both survival resource and social currency. Spend it like it remembers you.',
+    'A good escape tool is often worth more than another damage option.',
+    'Golgotha punishes characters who prepared for combat but not disease.',
+    'Reputation turns some impossible fights into conversations.',
+    'The best mutation is the one that solves your build\'s next failure point.',
+    'True Kin power is logistical: slots, wedges, implants and the routes between them.',
+    'If a creature looks asleep, your plan should include keeping it that way.'
+  ],
+
+  infoPages: {
+    about: {
+      title: 'About Caves of Qud Wiki',
+      body: '<p><strong>Caves of Qud Wiki</strong> is an unofficial fan-made archive for players who want practical, searchable guidance on Qud builds, mutations, cybernetics, factions, regions, items, creatures and lore.</p><p>The site is designed as a static knowledge base: fast, expandable, SEO-friendly and readable on desktop or mobile.</p><h3>Editorial approach</h3><p>Articles blend practical strategy with Qud\'s ancient-machine atmosphere. We prioritize clear survival advice, internal links, source notes and consistent article structure.</p><h3>Unofficial notice</h3><p>This site is not affiliated with, endorsed by, or sponsored by Freehold Games or any Caves of Qud rights holder.</p>'
+    },
+    'privacy-policy': {
+      title: 'Privacy Policy',
+      body: '<p><strong>Effective date:</strong> May 24, 2026</p><p>This static wiki does not require user accounts and does not intentionally collect names, passwords, payment details or private account information.</p><h3>Automatically processed information</h3><p>Hosting, analytics, security and advertising providers may process technical information such as IP address, browser type, device type, pages visited, referring pages, approximate location and timestamps.</p><h3>Cookies and advertising</h3><p>This site may use cookies, local storage, analytics tools and advertising providers such as Google AdSense. Advertising partners may use cookies or similar technologies to serve ads, measure performance, prevent fraud and personalize or limit advertising according to user settings and applicable law.</p><h3>Third-party links</h3><p>External links to official resources, stores, wikis, mod pages or community sites are governed by those sites\' own policies.</p><h3>Contact</h3><p>Questions about this policy can be sent through the contact page.</p>'
+    },
+    contact: {
+      title: 'Contact',
+      body: '<p>Use this page to report corrections, suggest articles, request removals or ask about the Caves of Qud Wiki project.</p><h3>Email</h3><p><a href="mailto:contact@gamewikihub.com">contact@gamewikihub.com</a></p><h3>What to include</h3><ul><li>The page URL or title.</li><li>What information is wrong, missing or outdated.</li><li>A source, screenshot, patch note or clear explanation when available.</li></ul><h3>Official support</h3><p>For official support, purchases, bug reports or account issues, contact Freehold Games or the relevant platform support channel.</p>'
+    }
+  }
+};
+
+function article(category, id, title, summary, points) {
+  return {
+    category,
+    id,
+    title,
+    summary,
+    stats: points,
+    sections: [
+      { h: 'Introduction', body: '<p>' + summary + '</p>' },
+      { h: 'Overview', list: points },
+      { h: 'Strategy', body: '<p>Read this entry as a decision map rather than a fixed script. Caves of Qud is procedural, and the correct answer depends on your route, faction state, available tools and how many exits you still have.</p>' },
+      { h: 'Synergies', list: ['Escape options', 'Faction reputation', 'Relevant skills', 'Equipment support', 'Information tools'] },
+      { h: 'Weaknesses', body: '<p>The common failure is overconfidence: assuming a good build, item or route removes the need to scout. It does not. Qud keeps receipts.</p>' },
+      { h: 'FAQ', list: ['Is this beginner friendly? Usually, if you understand the risk before committing.', 'Does this change between versions? Exact numbers can, so check source notes for fragile details.', 'What should I read next? Follow the related archive links below.'] }
+    ],
+    related: points.slice(0, 3).map((p) => ({ label: p, href: '/' + category })),
+    sources: ['officialWiki', 'officialSite']
+  };
+}

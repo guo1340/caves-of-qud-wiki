@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-label="Ancient Caves of Qud terminal archive scene">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#08110f"/>
+      <stop offset=".52" stop-color="#0d1512"/>
+      <stop offset="1" stop-color="#2b1714"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="45%" r="55%">
+      <stop offset="0" stop-color="#5ef2d6" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#5ef2d6" stop-opacity=".12"/>
+      <stop offset="1" stop-color="#5ef2d6" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .18"/></feComponentTransfer>
+      <feBlend mode="screen" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#sky)"/>
+  <rect width="1600" height="900" fill="url(#glow)" opacity=".8"/>
+  <g opacity=".28" stroke="#5ef2d6" stroke-width="2">
+    <path d="M0 140h1600M0 280h1600M0 420h1600M0 560h1600M0 700h1600"/>
+    <path d="M120 0v900M280 0v900M440 0v900M600 0v900M760 0v900M920 0v900M1080 0v900M1240 0v900M1400 0v900"/>
+  </g>
+  <path d="M0 620c180-110 380-150 610-92 155 40 290 28 450-42 205-90 360-72 540 10v404H0z" fill="#15211d"/>
+  <path d="M0 715c260-82 500-70 760-24 278 48 540 20 840-58v267H0z" fill="#08110f"/>
+  <g transform="translate(920 250)" fill="none" stroke="#5ef2d6" stroke-width="10" opacity=".8">
+    <rect x="0" y="0" width="310" height="260" rx="8"/>
+    <path d="M42 58h118M42 98h220M42 138h160M42 178h205"/>
+    <circle cx="250" cy="58" r="22" fill="#5ef2d6" opacity=".24"/>
+  </g>
+  <g transform="translate(1040 555)">
+    <path d="M0 0h230l-24 90H24z" fill="#1a2924" stroke="#5a9c80" stroke-width="8"/>
+    <path d="M58 90h112l20 86H38z" fill="#101816" stroke="#3e6b58" stroke-width="8"/>
+    <path d="M38 24h154M30 56h174" stroke="#f7c66b" stroke-width="7" opacity=".8"/>
+  </g>
+  <g transform="translate(350 432)" fill="none" stroke="#f7c66b" stroke-width="9" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 250V70l80-58 80 58v180"/>
+    <path d="M28 102h104M28 146h104M28 190h104"/>
+    <path d="M-50 250h260"/>
+  </g>
+  <g transform="translate(610 625)" opacity=".9">
+    <circle cx="0" cy="0" r="64" fill="#b56dff" opacity=".12"/>
+    <path d="M0-58c28 32 28 84 0 116-28-32-28-84 0-116z" fill="none" stroke="#b56dff" stroke-width="8"/>
+    <path d="M-54 0c32-24 76-24 108 0-32 24-76 24-108 0z" fill="none" stroke="#5ef2d6" stroke-width="8"/>
+    <circle cx="0" cy="0" r="12" fill="#f7c66b"/>
+  </g>
+  <g fill="#101816" stroke="#3e6b58" stroke-width="6">
+    <path d="M116 710h96v92h-96zM134 666h60v44h-60z"/>
+    <path d="M1370 682h116v110h-116zM1392 632h72v50h-72z"/>
+  </g>
+  <g opacity=".55" font-family="monospace" font-size="24" fill="#5ef2d6">
+    <text x="86" y="104">01001100 LIVE</text>
+    <text x="86" y="136">00100110 DRINK</text>
+    <text x="1120" y="122">MUTATION INDEX</text>
+    <text x="1120" y="154">REPUTATION MATRIX</text>
+  </g>
+  <rect width="1600" height="900" filter="url(#grain)" opacity=".5"/>
+</svg>

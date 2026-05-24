@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://caves-of-qud.gamewikihub.com/sitemap.xml

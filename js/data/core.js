@@ -49,6 +49,12 @@
       "summary": "Physical mutations, mental mutations, best picks, combos, tier lists and leveling."
     },
     {
+      "id": "comparisons",
+      "title": "Comparisons",
+      "icon": "signal",
+      "summary": "Decision guides for choosing between genotypes, weapons, mutation paths and long-term playstyles."
+    },
+    {
       "id": "builds",
       "title": "Character Builds",
       "icon": "profile",

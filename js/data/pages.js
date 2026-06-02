@@ -8,146 +8,201 @@
       "category": "beginner-guide",
       "id": "beginner-guide",
       "title": "Beginner Guide",
-      "summary": "Live and drink, traveler. This route teaches the first decisions that keep new characters from becoming dust.",
+      "summary": "A practical first-run plan for Caves of Qud: start safely, learn water and reputation, avoid unfair fights, and build a character with an actual escape plan.",
       "stats": [
-        "Choose caste or calling deliberately",
-        "Understand Mutant vs True Kin",
-        "Respect water as currency and survival resource",
-        "Learn when to run from bad fights",
-        "Use early villages and merchants as anchors"
+        "Start in Joppa while learning",
+        "Carry value, not endless water",
+        "Use Look before committing to fights",
+        "Retreat before the fight becomes dramatic",
+        "Choose Mutant or True Kin by survival plan"
       ],
       "sections": [
         {
-          "h": "Introduction",
-          "body": "<p>Live and drink, traveler. This route teaches the first decisions that keep new characters from becoming dust.</p>"
-        },
-        {
           "h": "Overview",
-          "list": [
-            "Choose caste or calling deliberately",
-            "Understand Mutant vs True Kin",
-            "Respect water as currency and survival resource",
-            "Learn when to run from bad fights",
-            "Use early villages and merchants as anchors"
-          ]
+          "body": "<p>The first lesson of Qud is that survival is a decision loop, not a stat check. You are not supposed to win every fight you see. You are supposed to identify which fights teach you something, which fights pay you, and which fights turn a promising character into another inscription in the salt.</p><p>For a first serious run, start in Joppa, talk to everyone, take the early village quests, and explore close to home before chasing strange map labels. Joppa gives you stable merchants, recognizable quest flow and a safer place to learn how water, reputation and combat tempo work.</p>"
         },
         {
-          "h": "Strategy",
-          "body": "<p>Read this entry as a decision map rather than a fixed script. Caves of Qud is procedural, and the correct answer depends on your route, faction state, available tools and how many exits you still have.</p>"
+          "h": "Why It Matters",
+          "body": "<p>Most beginner deaths happen before the player understands what decision killed them. They fight one more enemy while wounded, walk into darkness without scouting, haul too much water instead of compact valuables, or assume a dangerous creature is just a tougher version of something familiar.</p><p>Good beginner play slows the game down. Qud is turn-based. You can stop, Look at enemies, check your inventory, retreat to the world map when possible, use an injector, or simply leave. The best beginner skill is not damage. It is noticing the moment a situation has stopped being profitable.</p>"
         },
         {
-          "h": "Synergies",
+          "h": "Practical Uses",
+          "body": "<p>Use this page as your early-game checklist. Before leaving Joppa, know how you will heal, how you will make money, how you will fight weak enemies, and how you will escape bad ones. A build with only offense feels strong until the first turret, slumberling, disease risk or psychic problem asks a question your damage cannot answer.</p><p>When exploring, stay near known landmarks until you understand zone transitions. Clear small, readable areas. Use Look on unfamiliar enemies. If something appears out of place, assume it is dangerous until proven otherwise. Qud rewards curiosity, but only when curiosity brings a return path.</p>"
+        },
+        {
+          "h": "Strengths",
           "list": [
-            "Escape options",
-            "Faction reputation",
-            "Relevant skills",
-            "Equipment support",
-            "Information tools"
+            "Joppa starts reduce early randomness while you learn core systems.",
+            "Water, trade goods and village anchors give you a stable recovery loop.",
+            "A cautious beginner route teaches combat, questing and navigation without heavy spoilers.",
+            "Learning to retreat early improves every future build.",
+            "Understanding reputation turns some threats into future allies."
           ]
         },
         {
           "h": "Weaknesses",
-          "body": "<p>The common failure is overconfidence: assuming a good build, item or route removes the need to scout. It does not. Qud keeps receipts.</p>"
+          "list": [
+            "Playing too safely can delay learning how dangerous enemies actually behave.",
+            "Joppa is consistent, but it can make non-Joppa starts feel harsher later.",
+            "Beginner-friendly builds can hide bad habits if you never practice scouting.",
+            "Following quests blindly can still put you somewhere your character is not ready for.",
+            "No guide can remove Qud randomness; it can only teach better reactions."
+          ]
         },
         {
-          "h": "FAQ",
+          "h": "Community Opinions",
+          "body": "<p>Community beginner advice repeats a few themes: start in Joppa, do not be ashamed to run, use Look, respect water and do water rituals when available. Many players also recommend roleplay mode for learning because it lets you understand why a choice failed without losing the entire character every time.</p><p>Build advice varies, but the spirit is consistent: beginners need durability, a ranged or reach option, and a panic button. Players often recommend sturdy physical mutants or practical True Kin starts because they survive long enough to teach the map.</p>"
+        },
+        {
+          "h": "Common Mistakes",
+          "body": "<p>Do not carry your entire wealth as water if compact valuables are available. Do not assume every enemy in the same area is equally safe. Do not skip early learning quests just because you found something shiny. And do not wait until you are nearly dead to retreat; by then, Qud may have already closed the door.</p><p>The quiet mistake is building for a fantasy instead of a failure point. Ask what kills this character. Darkness? Being surrounded? Armor-piercing ranged enemies? Disease? Bad reputation? Then pick skills, mutations, cybernetics and routes that answer those problems.</p>"
+        },
+        {
+          "h": "Recommendations",
+          "body": "<p>My beginner recommendation is simple: play a Joppa start, choose a build with one clear combat plan and one clear escape plan, and treat your first goal as reaching confidence rather than reaching the endgame. Learn water economy, get comfortable with Look, practice leaving fights early, and read the True Kin vs Mutant comparison before rerolling repeatedly.</p><p>Once you can reach early quest milestones reliably, branch out into stranger starts, Esper builds, cybernetics and dangerous regions. Qud opens up beautifully after the basics stop taking all of your attention.</p>"
+        },
+        {
+          "h": "Related Articles",
           "list": [
-            "Is this beginner friendly? Usually, if you understand the risk before committing.",
-            "Does this change between versions? Exact numbers can, so check source notes for fragile details.",
-            "What should I read next? Follow the related archive links below."
+            "Starting Builds: /beginner-guide/starting-builds",
+            "True Kin vs Mutant: /comparisons/true-kin-vs-mutant",
+            "Water Economy: /beginner-guide/water-economy",
+            "Best Mutations: /mutations/best-mutations",
+            "Best Builds: /builds/best-builds"
           ]
         }
       ],
       "related": [
         {
-          "label": "Choose caste or calling deliberately",
-          "href": "/beginner-guide"
+          "label": "Starting Builds",
+          "href": "/beginner-guide/starting-builds"
         },
         {
-          "label": "Understand Mutant vs True Kin",
-          "href": "/beginner-guide"
+          "label": "True Kin vs Mutant",
+          "href": "/comparisons/true-kin-vs-mutant"
         },
         {
-          "label": "Respect water as currency and survival resource",
-          "href": "/beginner-guide"
+          "label": "Water Economy",
+          "href": "/beginner-guide/water-economy"
+        },
+        {
+          "label": "Best Mutations",
+          "href": "/mutations/best-mutations"
+        },
+        {
+          "label": "Best Builds",
+          "href": "/builds/best-builds"
+        },
+        {
+          "label": "Reputation Basics",
+          "href": "/beginner-guide/reputation-basics"
         }
       ],
       "sources": [
         "officialWiki",
-        "officialSite"
+        "officialSite",
+        "community",
+        "steam"
       ]
     },
     {
       "category": "beginner-guide",
       "id": "starting-builds",
       "title": "Starting Builds",
-      "summary": "A good starting build gives you one reliable answer to danger and one reliable plan for growth.",
+      "summary": "The safest starting builds are not the ones with the flashiest powers; they are the ones with a damage plan, an escape plan and a way to recover from mistakes.",
       "stats": [
-        "Beginner Mutant",
-        "Beginner True Kin",
-        "Ranged safety",
-        "Melee durability",
-        "Escape tools"
+        "Physical Mutant is the friendliest learning shell",
+        "True Kin is smoother if you like gear progression",
+        "Ranged backups prevent bad melee trades",
+        "Mobility beats greed",
+        "Esper is powerful but knowledge-hungry"
       ],
       "sections": [
         {
-          "h": "Introduction",
-          "body": "<p>A good starting build gives you one reliable answer to danger and one reliable plan for growth.</p>"
-        },
-        {
           "h": "Overview",
-          "list": [
-            "Beginner Mutant",
-            "Beginner True Kin",
-            "Ranged safety",
-            "Melee durability",
-            "Escape tools"
-          ]
+          "body": "<p>A good starting build should answer three questions before the first screen loads: how do I kill weak enemies, how do I survive a bad surprise, and how do I leave when the answer is neither? If a build cannot answer those questions, it may still be fun, but it is not beginner-safe.</p><p>The safest first builds usually lean physical, durable and practical. That does not mean boring. It means you can survive long enough to learn why the weird builds are weird.</p>"
         },
         {
-          "h": "Strategy",
-          "body": "<p>Read this entry as a decision map rather than a fixed script. Caves of Qud is procedural, and the correct answer depends on your route, faction state, available tools and how many exits you still have.</p>"
+          "h": "Why It Matters",
+          "body": "<p>Qud has many deaths that feel unfair until you learn the warning signs. A beginner build should buy you time to see those signs. Toughness, armor, movement, ranged options and healing are teaching tools. Pure damage is useful, but it does not help if you are boxed in, lost, diseased or staring at a threat your weapon cannot safely reach.</p><p>Starting builds also shape what you notice. A sturdy melee mutant teaches spacing and armor. A ranged start teaches ammunition, distance and line of sight. A True Kin start teaches inventory discipline, injectors and upgrade planning. None of these lessons are wasted.</p>"
         },
         {
-          "h": "Synergies",
+          "h": "Practical Uses",
+          "body": "<p>For a first Mutant, build around reliable melee or ranged combat, then add a mobility or escape tool. Multiple Legs, Wings, Teleportation-style repositioning, protective force effects or other positioning answers can save a run more often than another damage button. For True Kin, choose a calling with useful starting gear and treat injectors as tools to use, not trophies to die beside.</p><p>Keep a missile weapon even on melee characters. It gives you a way to handle enemies you do not want to trade hits with. Keep your inventory light enough to move, and convert excess wealth into compact valuables when possible.</p>"
+        },
+        {
+          "h": "Strengths",
           "list": [
-            "Escape options",
-            "Faction reputation",
-            "Relevant skills",
-            "Equipment support",
-            "Information tools"
+            "Physical mutant starts are easy to understand and forgive early tactical mistakes.",
+            "True Kin starts often feel smoother in the first few screens because of gear and injectors.",
+            "Ranged backups let new players avoid unnecessary melee trades.",
+            "Mobility mutations teach retreat and positioning very quickly.",
+            "Focused builds make level-up choices less overwhelming."
           ]
         },
         {
           "h": "Weaknesses",
-          "body": "<p>The common failure is overconfidence: assuming a good build, item or route removes the need to scout. It does not. Qud keeps receipts.</p>"
+          "list": [
+            "Overbuilt melee characters can become overconfident and die to non-melee problems.",
+            "True Kin can stall if you do not learn where cybernetic progression comes from.",
+            "Esper builds are strong but ask for more knowledge about threat management.",
+            "Too many unrelated mutations make the character exciting but strategically incoherent.",
+            "Glass cannon starts are poor teachers because they die before you understand the lesson."
+          ]
         },
         {
-          "h": "FAQ",
+          "h": "Community Opinions",
+          "body": "<p>Beginner-build discussions often recommend sturdy mutants, practical True Kin callings, and anything that gives a reliable escape. Some players swear by gunslinger-style starts because range makes early danger easier to control. Others prefer high-toughness melee because it keeps the game readable while you learn enemies.</p><p>There is less agreement on Esper starts. Many experienced players love them, but the usual beginner warning is fair: mental builds can become extremely strong, yet they also introduce extra complexity before you know the map.</p>"
+        },
+        {
+          "h": "Common Mistakes",
+          "body": "<p>The common mistake is picking five interesting tools instead of one plan. Another is refusing to run because the build feels strong. Your build is not strong if the terrain, enemy type or reputation situation invalidates it.</p><p>Do not spend your first runs optimizing late-game theory. Optimize for reaching the midgame alive. A plain build that teaches you Joppa, water, artifacts, basic reputation and retreat timing is more valuable than a perfect build code you cannot pilot.</p>"
+        },
+        {
+          "h": "Recommendations",
+          "body": "<p>For most new players, I recommend either a durable physical Mutant with mobility or a straightforward True Kin with good gear and injector discipline. Add a ranged backup quickly. Prioritize skills and equipment that make fights safer rather than merely faster.</p><p>After a few successful early runs, try Esper, Tinker and more specialized roleplay builds. They are excellent once you understand what ordinary survival costs.</p>"
+        },
+        {
+          "h": "Related Articles",
           "list": [
-            "Is this beginner friendly? Usually, if you understand the risk before committing.",
-            "Does this change between versions? Exact numbers can, so check source notes for fragile details.",
-            "What should I read next? Follow the related archive links below."
+            "Beginner Guide: /beginner-guide/beginner-guide",
+            "True Kin vs Mutant: /comparisons/true-kin-vs-mutant",
+            "Best Builds: /builds/best-builds",
+            "True Kin Guide: /builds/true-kin-guide",
+            "Best Mutations: /mutations/best-mutations"
           ]
         }
       ],
       "related": [
         {
-          "label": "Beginner Mutant",
-          "href": "/beginner-guide"
+          "label": "Beginner Guide",
+          "href": "/beginner-guide/beginner-guide"
         },
         {
-          "label": "Beginner True Kin",
-          "href": "/beginner-guide"
+          "label": "True Kin vs Mutant",
+          "href": "/comparisons/true-kin-vs-mutant"
         },
         {
-          "label": "Ranged safety",
-          "href": "/beginner-guide"
+          "label": "Best Builds",
+          "href": "/builds/best-builds"
+        },
+        {
+          "label": "True Kin Guide",
+          "href": "/builds/true-kin-guide"
+        },
+        {
+          "label": "Esper Build",
+          "href": "/builds/esper-build"
+        },
+        {
+          "label": "Best Mutations",
+          "href": "/mutations/best-mutations"
         }
       ],
       "sources": [
         "officialWiki",
-        "officialSite"
+        "community",
+        "steam"
       ]
     },
     {
@@ -446,73 +501,100 @@
       "category": "mutations",
       "id": "best-mutations",
       "title": "Best Mutations",
-      "summary": "The best mutations solve survival problems before they become emergencies.",
+      "summary": "The best mutations are not just high-damage powers. They are tools that solve Qud problems: escaping, scouting, surviving bad terrain and controlling fights before they spiral.",
       "stats": [
-        "Mobility",
-        "Escape",
-        "Damage scaling",
-        "Defense",
-        "Utility"
+        "Escape tools are premium",
+        "Mobility wins more runs than greed",
+        "Damage needs positioning support",
+        "Utility mutations scale quietly",
+        "Beginner picks should be easy to use under pressure"
       ],
       "sections": [
         {
-          "h": "Introduction",
-          "body": "<p>The best mutations solve survival problems before they become emergencies.</p>"
-        },
-        {
           "h": "Overview",
-          "list": [
-            "Mobility",
-            "Escape",
-            "Damage scaling",
-            "Defense",
-            "Utility"
-          ]
+          "body": "<p>When experienced players talk about the best mutations, they usually mean reliability, not spectacle. A flashy damage mutation is good when the fight is fair. The best mutations help when the fight is not fair: you are surrounded, blind, lost, out-ranged, diseased, ambushed or one turn away from a mistake becoming permanent.</p><p>For beginners, prioritize mutations that are easy to understand under pressure. Movement, defense, scouting and clean ranged damage all teach better play. More complicated mental kits can be stronger later, but they ask for more knowledge.</p>"
         },
         {
-          "h": "Strategy",
-          "body": "<p>Read this entry as a decision map rather than a fixed script. Caves of Qud is procedural, and the correct answer depends on your route, faction state, available tools and how many exits you still have.</p>"
+          "h": "Why It Matters",
+          "body": "<p>Mutation choices define your failure points. If every mutation is offensive, your character can still die to positioning. If every mutation is utility, you may survive without having a clean way to end fights. A good mutation package gives you one way to win normal fights and one way to refuse bad fights.</p><p>This is why community recommendations often sound less glamorous than expected. The mutation that gets you out of a bad room may save more runs than the mutation that wins a fight you already understood.</p>"
         },
         {
-          "h": "Synergies",
+          "h": "Practical Uses",
+          "body": "<p>Use mobility mutations to choose engagement distance. Use defensive mutations to buy time for recoils, healing or repositioning. Use scouting mutations to avoid entering bad rooms blindly. Use damage mutations when they fit your attributes and do not require you to stand in foolish places.</p><p>The practical question is always: what does this mutation let me do that mundane gear cannot do yet? If the answer is escape, information or reliable control, it is probably more valuable than it looks.</p>"
+        },
+        {
+          "h": "Strengths",
           "list": [
-            "Escape options",
-            "Faction reputation",
-            "Relevant skills",
-            "Equipment support",
-            "Information tools"
+            "Mobility mutations protect both beginners and veterans because positioning matters forever.",
+            "Defensive powers can turn sudden lethal encounters into recoverable situations.",
+            "Utility mutations such as scouting or environmental answers reduce unknown risk.",
+            "Reliable ranged or area damage helps when melee trades are not safe.",
+            "Good mutation packages make the character easier to pilot under stress."
           ]
         },
         {
           "h": "Weaknesses",
-          "body": "<p>The common failure is overconfidence: assuming a good build, item or route removes the need to scout. It does not. Qud keeps receipts.</p>"
+          "list": [
+            "Some strong mutations need experience before they feel strong.",
+            "Pure damage picks can create overconfidence.",
+            "Mental-heavy builds can introduce additional threat-management concerns.",
+            "Mutation point spread can become inefficient if every power wants investment.",
+            "Beginner players may forget active powers when panic starts."
+          ]
         },
         {
-          "h": "FAQ",
+          "h": "Community Opinions",
+          "body": "<p>Community recommendations frequently elevate escape and control tools. Players often talk about force effects, mobility, flight, teleport-style answers and practical physical mutations because they prevent sudden deaths. Damage mutations still get love, but veterans tend to value powers that change whether a fight has to happen at all.</p><p>Esper opinions remain divided. Many players consider mental mutations extremely powerful, but beginner discussions often warn that they are better after you understand enemy pressure, positioning and the broader world.</p>"
+        },
+        {
+          "h": "Common Mistakes",
+          "body": "<p>The classic mistake is treating a tier list as a shopping list. A mutation that is excellent in one build may be redundant in another. Another mistake is choosing powers for late-game fantasy while ignoring the first dangerous ruin. If a mutation cannot help before your character stabilizes, it is not carrying the run yet.</p><p>Also avoid buying powers that all demand constant active attention. New players already have enough to track. Your first package should be memorable and usable.</p>"
+        },
+        {
+          "h": "Recommendations",
+          "body": "<p>For beginners, choose one primary combat tool, one mobility or escape tool, and one utility or defensive tool. If you already have a strong ranged plan, value escape more. If you already have mobility, value durability or scouting. The best mutation is the one that covers the next thing most likely to kill you.</p><p>Once you understand early survival, experiment with stranger mental packages and synergy-heavy builds. They are more rewarding when you can already recognize when the run is drifting into danger.</p>"
+        },
+        {
+          "h": "Related Articles",
           "list": [
-            "Is this beginner friendly? Usually, if you understand the risk before committing.",
-            "Does this change between versions? Exact numbers can, so check source notes for fragile details.",
-            "What should I read next? Follow the related archive links below."
+            "Starting Builds: /beginner-guide/starting-builds",
+            "True Kin vs Mutant: /comparisons/true-kin-vs-mutant",
+            "Mutation Tier List: /mutations/mutation-tier-list",
+            "Mental Mutations: /mutations/mental-mutations",
+            "Best Builds: /builds/best-builds"
           ]
         }
       ],
       "related": [
         {
-          "label": "Mobility",
-          "href": "/mutations"
+          "label": "Starting Builds",
+          "href": "/beginner-guide/starting-builds"
         },
         {
-          "label": "Escape",
-          "href": "/mutations"
+          "label": "True Kin vs Mutant",
+          "href": "/comparisons/true-kin-vs-mutant"
         },
         {
-          "label": "Damage scaling",
-          "href": "/mutations"
+          "label": "Mutation Tier List",
+          "href": "/mutations/mutation-tier-list"
+        },
+        {
+          "label": "Mental Mutations",
+          "href": "/mutations/mental-mutations"
+        },
+        {
+          "label": "Physical Mutations",
+          "href": "/mutations/physical-mutations"
+        },
+        {
+          "label": "Best Builds",
+          "href": "/builds/best-builds"
         }
       ],
       "sources": [
         "officialWiki",
-        "officialSite"
+        "community",
+        "steam"
       ]
     },
     {
@@ -1009,16 +1091,28 @@
       ],
       "related": [
         {
-          "label": "Beginner safety",
-          "href": "/builds"
+          "label": "Starting Builds",
+          "href": "/beginner-guide/starting-builds"
         },
         {
-          "label": "Damage plan",
-          "href": "/builds"
+          "label": "True Kin vs Mutant",
+          "href": "/comparisons/true-kin-vs-mutant"
         },
         {
-          "label": "Escape plan",
-          "href": "/builds"
+          "label": "True Kin Guide",
+          "href": "/builds/true-kin-guide"
+        },
+        {
+          "label": "Esper Build",
+          "href": "/builds/esper-build"
+        },
+        {
+          "label": "Best Mutations",
+          "href": "/mutations/best-mutations"
+        },
+        {
+          "label": "Best Cybernetics",
+          "href": "/cybernetics/best-cybernetics"
         }
       ],
       "sources": [
@@ -1155,16 +1249,28 @@
       ],
       "related": [
         {
-          "label": "Calling choice",
-          "href": "/builds"
+          "label": "True Kin vs Mutant",
+          "href": "/comparisons/true-kin-vs-mutant"
         },
         {
-          "label": "Cybernetic credit wedges",
-          "href": "/builds"
+          "label": "Best Cybernetics",
+          "href": "/cybernetics/best-cybernetics"
         },
         {
-          "label": "Implant slots",
-          "href": "/builds"
+          "label": "Implant Slots",
+          "href": "/cybernetics/implant-slots"
+        },
+        {
+          "label": "Starting Builds",
+          "href": "/beginner-guide/starting-builds"
+        },
+        {
+          "label": "Best Builds",
+          "href": "/builds/best-builds"
+        },
+        {
+          "label": "Water Economy",
+          "href": "/beginner-guide/water-economy"
         }
       ],
       "sources": [
@@ -4528,6 +4634,107 @@
       "sources": [
         "officialWiki",
         "officialSite"
+      ]
+    },
+    {
+      "category": "comparisons",
+      "id": "true-kin-vs-mutant",
+      "title": "True Kin vs Mutant",
+      "summary": "Choose Mutant if you want early tools and build-defining powers; choose True Kin if you want reliable stats, stronger starting gear and cybernetic scaling.",
+      "stats": [
+        "Mutants are usually easier to learn because mutations give obvious tools early",
+        "True Kin start steadier but depend more on equipment, injectors and cybernetics",
+        "Mutant power spikes are flexible but can become chaotic",
+        "True Kin scaling is planned around cybernetic slots and credit wedges",
+        "Beginners should choose the side whose escape plan they understand"
+      ],
+      "sections": [
+        {
+          "h": "Overview",
+          "body": "<p>This is the first major character decision that changes how a Caves of Qud run feels. Mutants get build-defining powers immediately: movement, crowd control, ranged damage, utility and panic buttons can all come from character creation. True Kin get a cleaner baseline: better starting equipment, higher attribute floors, stronger tonic reliability and access to cybernetics instead of mutation-point chaos.</p><p>For a first serious run, I usually recommend Mutant unless the player specifically wants a more gear-driven roguelike experience. Mutations make the early game easier to read because your answer to danger is visible on your ability bar. True Kin are excellent, but they ask you to understand merchants, implants, credit wedges, recoilers and equipment progression sooner.</p>"
+        },
+        {
+          "h": "Why It Matters",
+          "body": "<p>Qud kills new characters when their build has no answer to a specific kind of problem. Snapjaws are one problem. Turrets are another. Disease, bad reputation, getting lost, darkness and being surrounded are all different problems. Mutant and True Kin solve those problems in different languages.</p><p>A Mutant can start with an escape mutation and learn the map with a safety net. A True Kin can start with sturdy gear and injectors, but must convert that stability into better equipment and cybernetics before the world starts throwing stranger threats at them. Neither choice is strictly stronger in every context. The better choice is the one whose failure points you know how to manage.</p>"
+        },
+        {
+          "h": "Practical Uses",
+          "body": "<p>Pick Mutant when you want a build that teaches active decision-making. A beginner physical mutant with mobility, toughness and one strong combat plan can handle early mistakes better than a fragile experiment. Pick True Kin when you want to learn equipment discipline, trading, tinkering and cybernetic progression without juggling mutation levels.</p><p>For roleplay mode or a first Joppa run, Mutant is forgiving because you can build in redundant escape tools. For players coming from more traditional RPGs, True Kin feels cleaner: attributes, armor, weapons, tonics and implants are easier to reason about than a pile of psychic powers.</p>"
+        },
+        {
+          "h": "Strengths",
+          "list": [
+            "Mutants can start with immediate answers such as mobility, light, crowd control or ranged damage.",
+            "Mutants are better for learning how one strong power changes an entire route through Qud.",
+            "True Kin begin with strong fundamentals: attributes, gear, injectors and reliable tonic use.",
+            "True Kin scale well for players who enjoy planning around implants, slots and route knowledge.",
+            "Both choices can reach absurd power; they simply ask for different kinds of preparation."
+          ]
+        },
+        {
+          "h": "Weaknesses",
+          "list": [
+            "Mutants can become messy if you pick powers that do not solve the same survival plan.",
+            "Esper-style mutants can snowball hard but punish beginners who do not understand threat escalation and positioning.",
+            "True Kin can feel plain if you do not know where to find cybernetics or how to fund upgrades.",
+            "True Kin have fewer obvious panic buttons at character creation unless you choose your starting cybernetic carefully.",
+            "Both genotypes die quickly if you treat armor, retreat routes and reputation as optional."
+          ]
+        },
+        {
+          "h": "Community Opinions",
+          "body": "<p>Community advice tends to split along experience lines. Many veteran players like True Kin because the stronger start, injectors and cybernetic planning reward map knowledge. Newer-player discussions often lean Mutant because mutations create obvious early tools and memorable builds. Physical mutant starts with mobility or durability come up repeatedly as beginner-friendly because they help you survive mistakes without needing perfect item knowledge.</p><p>There is also a recurring warning around mental-only or pure Esper starts: they can become extremely powerful, but they are not the easiest way to learn Qud. The community generally treats Esper as strong but knowledge-hungry, while sturdy physical mutants and practical True Kin callings are safer teaching tools.</p>"
+        },
+        {
+          "h": "Common Mistakes",
+          "body": "<p>The biggest mistake is choosing based on fantasy alone and ignoring the first ten levels. If your Mutant has three cool powers but no way to leave a bad fight, the run is fragile. If your True Kin has good starting gear but no plan for future implants or ranged threats, the run quietly stalls.</p><p>Another common mistake is assuming True Kin means simple. The character sheet is simpler, but the progression path is not. You need to care about merchants, cybernetics, recoilers and high-value trade goods. Mutants, meanwhile, should not buy every shiny mutation. A focused kit beats a grab bag.</p>"
+        },
+        {
+          "h": "Recommendations",
+          "body": "<p>For most beginners: start Mutant, take one durable combat plan and one escape or positioning tool, then learn Joppa, water, reputation and when to retreat. For players who prefer equipment-driven progression: start True Kin, pick a calling with practical gear, use injectors aggressively, and read the cybernetics pages before committing to long-term implant plans.</p><p>If you are undecided, ask one question: do you want your power to come from your body immediately, or from your route through the world? Mutant is body-first. True Kin is route-first. Both are good. The wrong choice is the one you do not build a survival plan around.</p>"
+        },
+        {
+          "h": "Related Articles",
+          "list": [
+            "Beginner Guide: /beginner-guide/beginner-guide",
+            "Starting Builds: /beginner-guide/starting-builds",
+            "True Kin Guide: /builds/true-kin-guide",
+            "Best Mutations: /mutations/best-mutations",
+            "Best Cybernetics: /cybernetics/best-cybernetics"
+          ]
+        }
+      ],
+      "related": [
+        {
+          "label": "Beginner Guide",
+          "href": "/beginner-guide/beginner-guide"
+        },
+        {
+          "label": "Starting Builds",
+          "href": "/beginner-guide/starting-builds"
+        },
+        {
+          "label": "True Kin Guide",
+          "href": "/builds/true-kin-guide"
+        },
+        {
+          "label": "Best Mutations",
+          "href": "/mutations/best-mutations"
+        },
+        {
+          "label": "Best Cybernetics",
+          "href": "/cybernetics/best-cybernetics"
+        },
+        {
+          "label": "Best Builds",
+          "href": "/builds/best-builds"
+        }
+      ],
+      "sources": [
+        "officialWiki",
+        "officialSite",
+        "community",
+        "steam"
       ]
     }
   ]

@@ -5,6 +5,7 @@
   const S = D.site;
   const categoryById = (id) => D.categories.find((c) => c.id === id);
   const pageByRoute = (cat, slug) => D.pages.find((p) => p.category === cat && p.id === slug);
+  const canonicalRoute = (route) => route === '/' ? '/' : route + '/';
   const clean = (route) => {
     route = (route || '/').replace(/\/+$/, '');
     return route || '/';
@@ -35,7 +36,7 @@
 
   function seoFor(route) {
     const info = routeInfo(route);
-    const canonical = S.baseUrl + (info.route === '/' ? '/' : info.route);
+    const canonical = S.baseUrl + canonicalRoute(info.route);
     let title = S.shortName + ' - Ancient Terminal Archive';
     let description = S.defaultDescription;
     let keywords = ['Caves of Qud wiki', 'Caves of Qud guide'];

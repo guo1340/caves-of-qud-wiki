@@ -12,6 +12,11 @@
   const pagesIn = (id) => D.pages.filter((p) => p.category === id);
   const page = (cat, id) => D.pages.find((p) => p.category === cat && p.id === id);
   const route = () => (location.pathname.replace(/\/$/, '') || '/').replace('/index.html', '/');
+  const cleanHref = (href) => {
+    if (!href || href === '/' || href.startsWith('http') || href.startsWith('mailto:') || href.startsWith('#')) return href;
+    if (!href.startsWith('/') || /\/$/.test(href) || /\.[a-z0-9]+$/i.test(href)) return href;
+    return href + '/';
+  };
 
   const icons = {
     compass: 'M50 12 62 38 88 50 62 62 50 88 38 62 12 50 38 38zM50 34v32M34 50h32',
@@ -46,7 +51,7 @@
   function relatedBlock(p) {
     const related = relatedPages(p);
     if (!related.length) return '';
-    return `<nav class="related" aria-label="Related pages"><h3>Related Archive Records</h3><div class="related-grid">${related.map((r) => `<a href="${esc(r.href)}">${esc(r.label)}</a>`).join('')}</div></nav>`;
+    return `<nav class="related" aria-label="Related pages"><h3>Related Archive Records</h3><div class="related-grid">${related.map((r) => `<a href="${esc(cleanHref(r.href))}">${esc(r.label)}</a>`).join('')}</div></nav>`;
   }
   function relatedPages(p, count = 5) {
     const sameCategory = D.pages
@@ -107,7 +112,7 @@
   }
 
   function renderLeftNav(active) {
-    leftNav.innerHTML = `<h3>Zone Index</h3><ul>${D.categories.map((c) => `<li><a href="/${esc(c.id)}" data-r="/${esc(c.id)}"><span>${esc(c.title.slice(0, 2).toUpperCase())}</span>${esc(c.title)}</a></li>`).join('')}</ul><h3>Site Info</h3><ul><li><a href="/about" data-r="/about"><span>AB</span>About</a></li><li><a href="/privacy-policy" data-r="/privacy-policy"><span>PP</span>Privacy Policy</a></li><li><a href="/contact" data-r="/contact"><span>CT</span>Contact</a></li></ul>`;
+    leftNav.innerHTML = `<h3>Zone Index</h3><ul>${D.categories.map((c) => `<li><a href="/${esc(c.id)}/" data-r="/${esc(c.id)}"><span>${esc(c.title.slice(0, 2).toUpperCase())}</span>${esc(c.title)}</a></li>`).join('')}</ul><h3>Site Info</h3><ul><li><a href="/about/" data-r="/about"><span>AB</span>About</a></li><li><a href="/privacy-policy/" data-r="/privacy-policy"><span>PP</span>Privacy Policy</a></li><li><a href="/contact/" data-r="/contact"><span>CT</span>Contact</a></li></ul>`;
     leftNav.querySelectorAll('a').forEach((a) => {
       const r = a.getAttribute('data-r');
       if (active === r || (r !== '/' && active.startsWith(r + '/'))) a.classList.add('active');
@@ -115,24 +120,24 @@
   }
   function renderRightNav() {
     const fact = D.facts[Math.floor(Math.random() * D.facts.length)];
-    rightNav.innerHTML = `<h3>Popular Queries</h3><ul><li><a href="/mutations/best-mutations"><span>MU</span>Best Mutations</a></li><li><a href="/builds/best-builds"><span>BU</span>Best Builds</a></li><li><a href="/builds/true-kin-guide"><span>TK</span>True Kin Guide</a></li><li><a href="/builds/esper-build"><span>ES</span>Esper Build</a></li><li><a href="/cybernetics/best-cybernetics"><span>CY</span>Best Cybernetics</a></li><li><a href="/factions/reputation-guide"><span>FA</span>Reputation Guide</a></li><li><a href="/maps/golgotha"><span>GO</span>Golgotha Guide</a></li></ul><h3>Daily Qud Fact</h3><p class="terminal-note">${esc(fact)}</p>`;
+    rightNav.innerHTML = `<h3>Popular Queries</h3><ul><li><a href="/mutations/best-mutations/"><span>MU</span>Best Mutations</a></li><li><a href="/builds/best-builds/"><span>BU</span>Best Builds</a></li><li><a href="/comparisons/true-kin-vs-mutant/"><span>CO</span>True Kin vs Mutant</a></li><li><a href="/builds/true-kin-guide/"><span>TK</span>True Kin Guide</a></li><li><a href="/builds/esper-build/"><span>ES</span>Esper Build</a></li><li><a href="/cybernetics/best-cybernetics/"><span>CY</span>Best Cybernetics</a></li><li><a href="/factions/reputation-guide/"><span>FA</span>Reputation Guide</a></li><li><a href="/maps/golgotha/"><span>GO</span>Golgotha Guide</a></li></ul><h3>Daily Qud Fact</h3><p class="terminal-note">${esc(fact)}</p>`;
   }
 
   function renderHome() {
     const featured = ['beginner-guide', 'best-mutations', 'best-builds', 'true-kin-guide', 'esper-build', 'golgotha'].map((id) => D.pages.find((p) => p.id === id)).filter(Boolean);
-    main.innerHTML = `<section class="hero"><img src="/assets/images/hero/homepage-hero.svg" alt="Tile-map Caves of Qud archive scene with ruins, desert, plants and chrome machinery" /><div class="hero-content"><span class="hero-kicker">Live and drink // terminal awake</span><h1>Caves of Qud Wiki</h1><p>A chromed archive for salt dunes, sentient plants, mutations, cybernetics, factions, relics and the thousand-year civilizations under Qud.</p><div class="hero-buttons"><a class="btn" href="/beginner-guide/beginner-guide">Beginner Guide</a><a class="btn" href="/mutations">Mutations</a><a class="btn" href="/builds">Character Builds</a><a class="btn" href="/factions">Factions</a><a class="btn" href="/maps">Maps</a><a class="btn" href="/lore">Lore</a></div></div></section>${adSlot('banner')}<h2 class="section-head">Archive Categories</h2><div class="cards cat-cards">${D.categories.map((c) => `<a class="card cat-card" href="/${esc(c.id)}"><span class="ico">${icon(c.icon)}</span><h4>${esc(c.title)}</h4><p>${esc(c.summary)}</p></a>`).join('')}</div><div class="home-grid"><section class="page"><h2>Core Traffic Records</h2><div class="breadcrumb">Pages travelers search for first.</div><ul class="link-list">${featured.map((p) => `<li><a href="/${esc(p.category)}/${esc(p.id)}">${esc(p.title)}<span>${esc(p.summary)}</span></a></li>`).join('')}</ul></section><section class="page terminal-panel"><h2>Build Survival Loop</h2><div class="breadcrumb">A compact machine-prayer for not dying.</div><ol><li>Start with one damage plan and one escape plan.</li><li>Use villages and merchants as anchors.</li><li>Respect disease, reputation and terrain as real threats.</li><li>Upgrade through skills, artifacts, cybernetics or mutations deliberately.</li><li>Leave before curiosity becomes a tomb inscription.</li></ol></section></div>${adSlot('in-article')}`;
+    main.innerHTML = `<section class="hero"><img src="/assets/images/hero/homepage-hero.svg" alt="Tile-map Caves of Qud archive scene with ruins, desert, plants and chrome machinery" /><div class="hero-content"><span class="hero-kicker">Live and drink // terminal awake</span><h1>Caves of Qud Wiki</h1><p>A chromed archive for salt dunes, sentient plants, mutations, cybernetics, factions, relics and the thousand-year civilizations under Qud.</p><div class="hero-buttons"><a class="btn" href="/beginner-guide/beginner-guide/">Beginner Guide</a><a class="btn" href="/mutations/">Mutations</a><a class="btn" href="/comparisons/">Comparisons</a><a class="btn" href="/builds/">Character Builds</a><a class="btn" href="/factions/">Factions</a><a class="btn" href="/maps/">Maps</a><a class="btn" href="/lore/">Lore</a></div></div></section>${adSlot('banner')}<h2 class="section-head">Archive Categories</h2><div class="cards cat-cards">${D.categories.map((c) => `<a class="card cat-card" href="/${esc(c.id)}/"><span class="ico">${icon(c.icon)}</span><h4>${esc(c.title)}</h4><p>${esc(c.summary)}</p></a>`).join('')}</div><div class="home-grid"><section class="page"><h2>Core Traffic Records</h2><div class="breadcrumb">Pages travelers search for first.</div><ul class="link-list">${featured.map((p) => `<li><a href="/${esc(p.category)}/${esc(p.id)}/">${esc(p.title)}<span>${esc(p.summary)}</span></a></li>`).join('')}</ul></section><section class="page terminal-panel"><h2>Build Survival Loop</h2><div class="breadcrumb">A compact machine-prayer for not dying.</div><ol><li>Start with one damage plan and one escape plan.</li><li>Use villages and merchants as anchors.</li><li>Respect disease, reputation and terrain as real threats.</li><li>Upgrade through skills, artifacts, cybernetics or mutations deliberately.</li><li>Leave before curiosity becomes a tomb inscription.</li></ol></section></div>${adSlot('in-article')}`;
   }
   function renderCategory(id) {
     const c = category(id);
     if (!c) return render404(id);
     const pages = pagesIn(id);
-    main.innerHTML = `${adSlot('banner')}<section class="page"><h1>${esc(c.title)}</h1><div class="breadcrumb">Home / ${esc(c.title)}</div><p class="lead">${esc(c.summary)}</p><div class="cards">${pages.map((p) => `<a class="card" href="/${esc(p.category)}/${esc(p.id)}"><h4>${esc(p.title)}</h4><p>${esc(p.summary)}</p></a>`).join('')}</div></section>${adSlot('in-article')}`;
+    main.innerHTML = `${adSlot('banner')}<section class="page"><h1>${esc(c.title)}</h1><div class="breadcrumb">Home / ${esc(c.title)}</div><p class="lead">${esc(c.summary)}</p><div class="cards">${pages.map((p) => `<a class="card" href="/${esc(p.category)}/${esc(p.id)}/"><h4>${esc(p.title)}</h4><p>${esc(p.summary)}</p></a>`).join('')}</div></section>${adSlot('in-article')}`;
   }
   function renderDetail(cat, id) {
     const c = category(cat);
     const p = page(cat, id);
     if (!c || !p) return render404(cat + '/' + id);
-    main.innerHTML = `${adSlot('banner')}<article class="page article"><div class="breadcrumb"><a href="/${esc(c.id)}">${esc(c.title)}</a> / ${esc(p.title)}</div><h1>${esc(p.title)}</h1><p class="lead">${esc(p.summary)}</p><div class="info-grid"><div>${sectionsHTML(p.sections)}${relatedBlock(p)}${sourceNotes(p)}</div><aside class="infobox"><div class="infobox-head">Quick Stats</div><dl>${p.stats.map((x, i) => `<dt>${String(i + 1).padStart(2, '0')}</dt><dd>${esc(x)}</dd>`).join('')}</dl></aside></div></article>${adSlot('in-article')}`;
+    main.innerHTML = `${adSlot('banner')}<article class="page article"><div class="breadcrumb"><a href="/${esc(c.id)}/">${esc(c.title)}</a> / ${esc(p.title)}</div><h1>${esc(p.title)}</h1><p class="lead">${esc(p.summary)}</p><div class="info-grid"><div>${sectionsHTML(p.sections)}${relatedBlock(p)}${sourceNotes(p)}</div><aside class="infobox"><div class="infobox-head">Quick Stats</div><dl>${p.stats.map((x, i) => `<dt>${String(i + 1).padStart(2, '0')}</dt><dd>${esc(x)}</dd>`).join('')}</dl></aside></div></article>${adSlot('in-article')}`;
   }
   function renderInfo(slug) {
     const p = D.infoPages[slug];
@@ -164,9 +169,9 @@
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }
   const searchIndex = Array.isArray(D.searchIndex) ? D.searchIndex : [
-    ...D.categories.map((c) => ({ title: c.title, sub: 'Category', href: '/' + c.id })),
-    ...D.pages.map((p) => ({ title: p.title, sub: category(p.category).title, href: '/' + p.category + '/' + p.id, tags: p.stats.join(' ') })),
-    ...Object.entries(D.infoPages).map(([k, p]) => ({ title: p.title, sub: 'Site Info', href: '/' + k }))
+    ...D.categories.map((c) => ({ title: c.title, sub: 'Category', href: '/' + c.id + '/' })),
+    ...D.pages.map((p) => ({ title: p.title, sub: category(p.category).title, href: '/' + p.category + '/' + p.id + '/', tags: p.stats.join(' ') })),
+    ...Object.entries(D.infoPages).map(([k, p]) => ({ title: p.title, sub: 'Site Info', href: '/' + k + '/' }))
   ];
   function runSearch(q) {
     if (!q) {
@@ -175,7 +180,7 @@
     }
     const low = q.toLowerCase();
     const matches = searchIndex.filter((x) => (x.title + ' ' + x.sub + ' ' + (x.tags || '')).toLowerCase().includes(low)).slice(0, 12);
-    searchResults.innerHTML = matches.length ? matches.map((m) => `<a href="${esc(m.href)}">${esc(m.title)}<span>${esc(m.sub)}</span></a>`).join('') : '<div class="empty">No archive records match.</div>';
+    searchResults.innerHTML = matches.length ? matches.map((m) => `<a href="${esc(cleanHref(m.href))}">${esc(m.title)}<span>${esc(m.sub)}</span></a>`).join('') : '<div class="empty">No archive records match.</div>';
     searchResults.classList.add('open');
   }
   searchInput.addEventListener('input', () => runSearch(searchInput.value.trim()));

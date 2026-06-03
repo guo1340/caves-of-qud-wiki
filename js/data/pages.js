@@ -75,27 +75,27 @@
       "related": [
         {
           "label": "Starting Builds",
-          "href": "/beginner-guide/starting-builds"
+          "href": "/beginner-guide/starting-builds/"
         },
         {
           "label": "True Kin vs Mutant",
-          "href": "/comparisons/true-kin-vs-mutant"
+          "href": "/comparisons/true-kin-vs-mutant/"
         },
         {
           "label": "Water Economy",
-          "href": "/beginner-guide/water-economy"
+          "href": "/beginner-guide/water-economy/"
         },
         {
           "label": "Best Mutations",
-          "href": "/mutations/best-mutations"
+          "href": "/mutations/best-mutations/"
         },
         {
           "label": "Best Builds",
-          "href": "/builds/best-builds"
+          "href": "/builds/best-builds/"
         },
         {
           "label": "Reputation Basics",
-          "href": "/beginner-guide/reputation-basics"
+          "href": "/beginner-guide/reputation-basics/"
         }
       ],
       "sources": [
@@ -176,27 +176,27 @@
       "related": [
         {
           "label": "Beginner Guide",
-          "href": "/beginner-guide/beginner-guide"
+          "href": "/beginner-guide/beginner-guide/"
         },
         {
           "label": "True Kin vs Mutant",
-          "href": "/comparisons/true-kin-vs-mutant"
+          "href": "/comparisons/true-kin-vs-mutant/"
         },
         {
           "label": "Best Builds",
-          "href": "/builds/best-builds"
+          "href": "/builds/best-builds/"
         },
         {
           "label": "True Kin Guide",
-          "href": "/builds/true-kin-guide"
+          "href": "/builds/true-kin-guide/"
         },
         {
           "label": "Esper Build",
-          "href": "/builds/esper-build"
+          "href": "/builds/esper-build/"
         },
         {
           "label": "Best Mutations",
-          "href": "/mutations/best-mutations"
+          "href": "/mutations/best-mutations/"
         }
       ],
       "sources": [
@@ -262,15 +262,15 @@
       "related": [
         {
           "label": "Trade value",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Weight burden",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Desert travel",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         }
       ],
       "sources": [
@@ -335,15 +335,15 @@
       "related": [
         {
           "label": "Line of sight",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Kiting",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Corners",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         }
       ],
       "sources": [
@@ -408,15 +408,15 @@
       "related": [
         {
           "label": "Faction attitudes",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Water rituals",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Schrodinger pages",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         }
       ],
       "sources": [
@@ -481,15 +481,15 @@
       "related": [
         {
           "label": "Exploring too deep",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Ignoring disease",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         },
         {
           "label": "Fighting slumberlings",
-          "href": "/beginner-guide"
+          "href": "/beginner-guide/"
         }
       ],
       "sources": [
@@ -568,27 +568,27 @@
       "related": [
         {
           "label": "Starting Builds",
-          "href": "/beginner-guide/starting-builds"
+          "href": "/beginner-guide/starting-builds/"
         },
         {
           "label": "True Kin vs Mutant",
-          "href": "/comparisons/true-kin-vs-mutant"
+          "href": "/comparisons/true-kin-vs-mutant/"
         },
         {
           "label": "Mutation Tier List",
-          "href": "/mutations/mutation-tier-list"
+          "href": "/mutations/mutation-tier-list/"
         },
         {
           "label": "Mental Mutations",
-          "href": "/mutations/mental-mutations"
+          "href": "/mutations/mental-mutations/"
         },
         {
           "label": "Physical Mutations",
-          "href": "/mutations/physical-mutations"
+          "href": "/mutations/physical-mutations/"
         },
         {
           "label": "Best Builds",
-          "href": "/builds/best-builds"
+          "href": "/builds/best-builds/"
         }
       ],
       "sources": [
@@ -654,15 +654,15 @@
       "related": [
         {
           "label": "Multiple Arms",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Wings",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Regeneration",
-          "href": "/mutations"
+          "href": "/mutations/"
         }
       ],
       "sources": [
@@ -727,15 +727,15 @@
       "related": [
         {
           "label": "Clairvoyance",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Teleportation",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Temporal Fugue",
-          "href": "/mutations"
+          "href": "/mutations/"
         }
       ],
       "sources": [
@@ -800,15 +800,15 @@
       "related": [
         {
           "label": "Mobility plus ranged damage",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Vision plus teleportation",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Extra limbs plus melee",
-          "href": "/mutations"
+          "href": "/mutations/"
         }
       ],
       "sources": [
@@ -873,15 +873,15 @@
       "related": [
         {
           "label": "Beginner value",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Scaling",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Risk",
-          "href": "/mutations"
+          "href": "/mutations/"
         }
       ],
       "sources": [
@@ -946,15 +946,15 @@
       "related": [
         {
           "label": "Clone behavior",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Friendly fire risk",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Build synergy",
-          "href": "/mutations"
+          "href": "/mutations/"
         }
       ],
       "sources": [
@@ -1019,15 +1019,15 @@
       "related": [
         {
           "label": "Escape range",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Cooldown planning",
-          "href": "/mutations"
+          "href": "/mutations/"
         },
         {
           "label": "Vision synergy",
-          "href": "/mutations"
+          "href": "/mutations/"
         }
       ],
       "sources": [
@@ -1092,27 +1092,27 @@
       "related": [
         {
           "label": "Starting Builds",
-          "href": "/beginner-guide/starting-builds"
+          "href": "/beginner-guide/starting-builds/"
         },
         {
           "label": "True Kin vs Mutant",
-          "href": "/comparisons/true-kin-vs-mutant"
+          "href": "/comparisons/true-kin-vs-mutant/"
         },
         {
           "label": "True Kin Guide",
-          "href": "/builds/true-kin-guide"
+          "href": "/builds/true-kin-guide/"
         },
         {
           "label": "Esper Build",
-          "href": "/builds/esper-build"
+          "href": "/builds/esper-build/"
         },
         {
           "label": "Best Mutations",
-          "href": "/mutations/best-mutations"
+          "href": "/mutations/best-mutations/"
         },
         {
           "label": "Best Cybernetics",
-          "href": "/cybernetics/best-cybernetics"
+          "href": "/cybernetics/best-cybernetics/"
         }
       ],
       "sources": [
@@ -1177,15 +1177,15 @@
       "related": [
         {
           "label": "Ego scaling",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Mental mutations",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Psychic hunters",
-          "href": "/builds"
+          "href": "/builds/"
         }
       ],
       "sources": [
@@ -1250,27 +1250,27 @@
       "related": [
         {
           "label": "True Kin vs Mutant",
-          "href": "/comparisons/true-kin-vs-mutant"
+          "href": "/comparisons/true-kin-vs-mutant/"
         },
         {
           "label": "Best Cybernetics",
-          "href": "/cybernetics/best-cybernetics"
+          "href": "/cybernetics/best-cybernetics/"
         },
         {
           "label": "Implant Slots",
-          "href": "/cybernetics/implant-slots"
+          "href": "/cybernetics/implant-slots/"
         },
         {
           "label": "Starting Builds",
-          "href": "/beginner-guide/starting-builds"
+          "href": "/beginner-guide/starting-builds/"
         },
         {
           "label": "Best Builds",
-          "href": "/builds/best-builds"
+          "href": "/builds/best-builds/"
         },
         {
           "label": "Water Economy",
-          "href": "/beginner-guide/water-economy"
+          "href": "/beginner-guide/water-economy/"
         }
       ],
       "sources": [
@@ -1335,15 +1335,15 @@
       "related": [
         {
           "label": "Ammo economy",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Pistols",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Rifles",
-          "href": "/builds"
+          "href": "/builds/"
         }
       ],
       "sources": [
@@ -1408,15 +1408,15 @@
       "related": [
         {
           "label": "Tinkering skills",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Disassembly",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Grenades",
-          "href": "/builds"
+          "href": "/builds/"
         }
       ],
       "sources": [
@@ -1481,15 +1481,15 @@
       "related": [
         {
           "label": "Weapon tree",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Toughness",
-          "href": "/builds"
+          "href": "/builds/"
         },
         {
           "label": "Charge risk",
-          "href": "/builds"
+          "href": "/builds/"
         }
       ],
       "sources": [
@@ -1554,15 +1554,15 @@
       "related": [
         {
           "label": "Survival skills",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Weapon skills",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Tinkering",
-          "href": "/skills"
+          "href": "/skills/"
         }
       ],
       "sources": [
@@ -1627,15 +1627,15 @@
       "related": [
         {
           "label": "Early defense",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Economy skills",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Travel skills",
-          "href": "/skills"
+          "href": "/skills/"
         }
       ],
       "sources": [
@@ -1700,15 +1700,15 @@
       "related": [
         {
           "label": "Tinker I",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Tinker II",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Tinker III",
-          "href": "/skills"
+          "href": "/skills/"
         }
       ],
       "sources": [
@@ -1773,15 +1773,15 @@
       "related": [
         {
           "label": "Proselytize",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Berate",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Merchant value",
-          "href": "/skills"
+          "href": "/skills/"
         }
       ],
       "sources": [
@@ -1846,15 +1846,15 @@
       "related": [
         {
           "label": "Stances",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Dueling",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "PV pressure",
-          "href": "/skills"
+          "href": "/skills/"
         }
       ],
       "sources": [
@@ -1919,15 +1919,15 @@
       "related": [
         {
           "label": "Range",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Ammo",
-          "href": "/skills"
+          "href": "/skills/"
         },
         {
           "label": "Penetration",
-          "href": "/skills"
+          "href": "/skills/"
         }
       ],
       "sources": [
@@ -1992,15 +1992,15 @@
       "related": [
         {
           "label": "Night vision",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Motorized treads",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Giant hands",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         }
       ],
       "sources": [
@@ -2065,15 +2065,15 @@
       "related": [
         {
           "label": "Body slots",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Conflicts",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Credit wedges",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         }
       ],
       "sources": [
@@ -2138,15 +2138,15 @@
       "related": [
         {
           "label": "Starting implants",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Economy",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Compatibility",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         }
       ],
       "sources": [
@@ -2211,15 +2211,15 @@
       "related": [
         {
           "label": "Ruins",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Vendors",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Credit wedges",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         }
       ],
       "sources": [
@@ -2284,15 +2284,15 @@
       "related": [
         {
           "label": "Movement speed",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Slot cost",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         },
         {
           "label": "Build fit",
-          "href": "/cybernetics"
+          "href": "/cybernetics/"
         }
       ],
       "sources": [
@@ -2357,15 +2357,15 @@
       "related": [
         {
           "label": "Water rituals",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Faction enemies",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Reputation gains",
-          "href": "/factions"
+          "href": "/factions/"
         }
       ],
       "sources": [
@@ -2430,15 +2430,15 @@
       "related": [
         {
           "label": "Eligible NPCs",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Secrets",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Reputation exchange",
-          "href": "/factions"
+          "href": "/factions/"
         }
       ],
       "sources": [
@@ -2503,15 +2503,15 @@
       "related": [
         {
           "label": "Six Day Stilt",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Temples",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Reputation",
-          "href": "/factions"
+          "href": "/factions/"
         }
       ],
       "sources": [
@@ -2576,15 +2576,15 @@
       "related": [
         {
           "label": "Grit Gate",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Quests",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Rewards",
-          "href": "/factions"
+          "href": "/factions/"
         }
       ],
       "sources": [
@@ -2649,15 +2649,15 @@
       "related": [
         {
           "label": "Hostility",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "True Kin ideology",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Danger",
-          "href": "/factions"
+          "href": "/factions/"
         }
       ],
       "sources": [
@@ -2722,15 +2722,15 @@
       "related": [
         {
           "label": "Jungle danger",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Reputation",
-          "href": "/factions"
+          "href": "/factions/"
         },
         {
           "label": "Villages",
-          "href": "/factions"
+          "href": "/factions/"
         }
       ],
       "sources": [
@@ -2795,15 +2795,15 @@
       "related": [
         {
           "label": "Starting quests",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Vendors",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Nearby danger",
-          "href": "/maps"
+          "href": "/maps/"
         }
       ],
       "sources": [
@@ -2868,15 +2868,15 @@
       "related": [
         {
           "label": "Merchants",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Mechanimists",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Water rituals",
-          "href": "/maps"
+          "href": "/maps/"
         }
       ],
       "sources": [
@@ -2941,15 +2941,15 @@
       "related": [
         {
           "label": "Recommended level",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Disease risk",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Conveyors",
-          "href": "/maps"
+          "href": "/maps/"
         }
       ],
       "sources": [
@@ -3014,15 +3014,15 @@
       "related": [
         {
           "label": "Cold danger",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Faction context",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Threats",
-          "href": "/maps"
+          "href": "/maps/"
         }
       ],
       "sources": [
@@ -3087,15 +3087,15 @@
       "related": [
         {
           "label": "Early enemies",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Terrain",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Loot",
-          "href": "/maps"
+          "href": "/maps/"
         }
       ],
       "sources": [
@@ -3160,15 +3160,15 @@
       "related": [
         {
           "label": "Oozes",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Terrain",
-          "href": "/maps"
+          "href": "/maps/"
         },
         {
           "label": "Lore",
-          "href": "/maps"
+          "href": "/maps/"
         }
       ],
       "sources": [
@@ -3233,15 +3233,15 @@
       "related": [
         {
           "label": "Penetration",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Accuracy",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Ammo",
-          "href": "/items"
+          "href": "/items/"
         }
       ],
       "sources": [
@@ -3306,15 +3306,15 @@
       "related": [
         {
           "label": "AV",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "DV",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Weight",
-          "href": "/items"
+          "href": "/items/"
         }
       ],
       "sources": [
@@ -3379,15 +3379,15 @@
       "related": [
         {
           "label": "Identification",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Tinkering",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Energy cells",
-          "href": "/items"
+          "href": "/items/"
         }
       ],
       "sources": [
@@ -3452,15 +3452,15 @@
       "related": [
         {
           "label": "Salve",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Ubernostrum",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Phase",
-          "href": "/items"
+          "href": "/items/"
         }
       ],
       "sources": [
@@ -3525,15 +3525,15 @@
       "related": [
         {
           "label": "Generation",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Stats",
-          "href": "/items"
+          "href": "/items/"
         },
         {
           "label": "Lore",
-          "href": "/items"
+          "href": "/items/"
         }
       ],
       "sources": [
@@ -3598,15 +3598,15 @@
       "related": [
         {
           "label": "Threat level",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Missiles",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Armor",
-          "href": "/creatures"
+          "href": "/creatures/"
         }
       ],
       "sources": [
@@ -3671,15 +3671,15 @@
       "related": [
         {
           "label": "Sleep state",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Melee danger",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Avoidance",
-          "href": "/creatures"
+          "href": "/creatures/"
         }
       ],
       "sources": [
@@ -3744,15 +3744,15 @@
       "related": [
         {
           "label": "Threats",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Reputation",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Terrain",
-          "href": "/creatures"
+          "href": "/creatures/"
         }
       ],
       "sources": [
@@ -3817,15 +3817,15 @@
       "related": [
         {
           "label": "Early combat",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Equipment",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Numbers",
-          "href": "/creatures"
+          "href": "/creatures/"
         }
       ],
       "sources": [
@@ -3890,15 +3890,15 @@
       "related": [
         {
           "label": "Water threat",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Dismemberment",
-          "href": "/creatures"
+          "href": "/creatures/"
         },
         {
           "label": "Avoidance",
-          "href": "/creatures"
+          "href": "/creatures/"
         }
       ],
       "sources": [
@@ -3963,15 +3963,15 @@
       "related": [
         {
           "label": "Ancient Earth",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Sultans",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Ruins",
-          "href": "/lore"
+          "href": "/lore/"
         }
       ],
       "sources": [
@@ -4036,15 +4036,15 @@
       "related": [
         {
           "label": "Historic sites",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Relics",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Narrative fragments",
-          "href": "/lore"
+          "href": "/lore/"
         }
       ],
       "sources": [
@@ -4109,15 +4109,15 @@
       "related": [
         {
           "label": "Mechanimists",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Pilgrimage",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Ritual",
-          "href": "/lore"
+          "href": "/lore/"
         }
       ],
       "sources": [
@@ -4182,15 +4182,15 @@
       "related": [
         {
           "label": "Quest hubs",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Water rituals",
-          "href": "/lore"
+          "href": "/lore/"
         },
         {
           "label": "Faction value",
-          "href": "/lore"
+          "href": "/lore/"
         }
       ],
       "sources": [
@@ -4255,15 +4255,15 @@
       "related": [
         {
           "label": "UI helpers",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Content mods",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Balance",
-          "href": "/mods"
+          "href": "/mods/"
         }
       ],
       "sources": [
@@ -4328,15 +4328,15 @@
       "related": [
         {
           "label": "Readability",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Inventory",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Map tools",
-          "href": "/mods"
+          "href": "/mods/"
         }
       ],
       "sources": [
@@ -4401,15 +4401,15 @@
       "related": [
         {
           "label": "Automation",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Information",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Inventory",
-          "href": "/mods"
+          "href": "/mods/"
         }
       ],
       "sources": [
@@ -4474,15 +4474,15 @@
       "related": [
         {
           "label": "Finding mods",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Install location",
-          "href": "/mods"
+          "href": "/mods/"
         },
         {
           "label": "Compatibility",
-          "href": "/mods"
+          "href": "/mods/"
         }
       ],
       "sources": [
@@ -4547,15 +4547,15 @@
       "related": [
         {
           "label": "Version changes",
-          "href": "/updates"
+          "href": "/updates/"
         },
         {
           "label": "New content",
-          "href": "/updates"
+          "href": "/updates/"
         },
         {
           "label": "Balance",
-          "href": "/updates"
+          "href": "/updates/"
         }
       ],
       "sources": [
@@ -4620,15 +4620,15 @@
       "related": [
         {
           "label": "Major changes",
-          "href": "/updates"
+          "href": "/updates/"
         },
         {
           "label": "Compatibility",
-          "href": "/updates"
+          "href": "/updates/"
         },
         {
           "label": "New mechanics",
-          "href": "/updates"
+          "href": "/updates/"
         }
       ],
       "sources": [
@@ -4707,27 +4707,27 @@
       "related": [
         {
           "label": "Beginner Guide",
-          "href": "/beginner-guide/beginner-guide"
+          "href": "/beginner-guide/beginner-guide/"
         },
         {
           "label": "Starting Builds",
-          "href": "/beginner-guide/starting-builds"
+          "href": "/beginner-guide/starting-builds/"
         },
         {
           "label": "True Kin Guide",
-          "href": "/builds/true-kin-guide"
+          "href": "/builds/true-kin-guide/"
         },
         {
           "label": "Best Mutations",
-          "href": "/mutations/best-mutations"
+          "href": "/mutations/best-mutations/"
         },
         {
           "label": "Best Cybernetics",
-          "href": "/cybernetics/best-cybernetics"
+          "href": "/cybernetics/best-cybernetics/"
         },
         {
           "label": "Best Builds",
-          "href": "/builds/best-builds"
+          "href": "/builds/best-builds/"
         }
       ],
       "sources": [

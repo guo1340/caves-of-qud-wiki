@@ -108,6 +108,21 @@ function escText(s) {
     .replace(/</g, "&lt;")
     .replace(/>/g, "&gt;");
 }
+function cleanInternalLinks(html) {
+  return html.replace(/href="(\/[^"?#]*)"/g, (full, href) => {
+    if (
+      href === "/" ||
+      href.endsWith("/") ||
+      /\.[a-z0-9]+$/i.test(href) ||
+      href.startsWith("/assets/") ||
+      href.startsWith("/css/") ||
+      href.startsWith("/js/")
+    ) {
+      return full;
+    }
+    return `href="${href}/"`;
+  });
+}
 function renderMain(route) {
   CURRENT = route;
   delete require.cache[APP];
@@ -164,7 +179,7 @@ function buildPage(template, route) {
     /<main id="main">[\s\S]*?<\/main>/,
     '<main id="main">' + mainHtml + "</main>",
   );
-  return html;
+  return cleanInternalLinks(html);
 }
 function routes() {
   return ["/", "/about", "/privacy-policy", "/contact"]
@@ -179,7 +194,7 @@ function outPath(route) {
 function writeSitemap(allRoutes) {
   const urls = allRoutes
     .map((r) => {
-      const loc = D.site.baseUrl + (r === "/" ? "/" : r);
+      const loc = D.site.baseUrl + (r === "/" ? "/" : r + "/");
       const depth = r.split("/").filter(Boolean).length;
       return `  <url><loc>${loc}</loc><lastmod>${D.site.lastUpdated}</lastmod><changefreq>${r === "/" ? "daily" : "weekly"}</changefreq><priority>${r === "/" ? "1.0" : depth === 1 ? "0.8" : "0.7"}</priority></url>`;
     })

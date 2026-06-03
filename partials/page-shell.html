@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <base href="/" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      document.documentElement.classList.add("loading");
+    </script>
     <!-- coq:head -->
     <!-- /coq:head -->
     <script type="application/ld+json" id="coq-jsonld">{}</script>
@@ -29,12 +32,25 @@
     <!-- coq:header -->
     <div class="layout">
       <!-- coq:left-sidebar -->
-      <main id="main"><!-- coq:main --></main>
+      <main id="main">
+        <div class="page-loader" id="pageLoader" role="status" aria-live="polite">
+          <span class="loader-kicker">Chrome archive waking</span>
+          <span class="loader-title">Loading Qud record</span>
+          <span class="loader-grid" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="loader-copy">Header, sidebars and field links online. Rendering the main terminal packet...</span>
+        </div>
+        <!-- coq:main -->
+      </main>
       <!-- coq:right-sidebar -->
     </div>
     <!-- coq:footer -->
     <script src="/js/data.js"></script>
     <script src="/js/meta.js"></script>
     <script src="/js/app.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.documentElement.classList.remove("loading");
+      });
+    </script>
   </body>
 </html>

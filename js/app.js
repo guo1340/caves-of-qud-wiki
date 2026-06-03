@@ -44,6 +44,10 @@
       try { (window.adsbygoogle = window.adsbygoogle || []).push({}); } catch (e) {}
     });
   }
+  function releaseLoadingBuffer() {
+    const root = document.documentElement;
+    if (root && root.classList) root.classList.remove('loading');
+  }
   function sourceNotes(entity) {
     const list = (entity && entity.sources || ['officialWiki', 'officialSite']).map((k) => D.sourceRegistry[k]).filter(Boolean);
     return `<aside class="source-notes"><div class="src-head">Source Packet</div><div class="src-meta"><span><strong>Last updated:</strong> ${esc(D.site.lastUpdated)}</span><span><strong>Version note:</strong> ${esc(D.site.buildStatus)}</span></div><ul>${list.map((s) => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener noreferrer">${esc(s.label)}</a> - ${esc(s.note)}</li>`).join('')}</ul><p>Qud is dense and version-sensitive. Treat exact numbers, spawn behavior and mod compatibility as things to verify when a run depends on them.</p></aside>`;
@@ -219,4 +223,5 @@
   } else {
     setTimeout(loadAds, 100);
   }
+  setTimeout(releaseLoadingBuffer, 320);
 })();

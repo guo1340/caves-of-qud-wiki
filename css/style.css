@@ -121,6 +121,16 @@ header.site {
 nav.top { display: flex; flex-wrap: wrap; gap: 2px; }
 nav.top a { color: var(--muted); padding: 7px 8px; font: 800 13px var(--head-font); text-transform: uppercase; border: 1px solid transparent; }
 nav.top a:hover { color: var(--glow); border-color: rgba(111,255,226,.22); background: rgba(111,255,226,.08); text-decoration: none; }
+nav.top a.hub-link {
+  color: var(--void);
+  background: var(--amber);
+  border-color: var(--amber);
+}
+nav.top a.hub-link:hover {
+  color: var(--void);
+  background: var(--acid);
+  border-color: var(--acid);
+}
 .menu-toggle { display: none; border: 1px solid var(--line); background: var(--panel); color: var(--text); padding: 8px 10px; }
 
 .terminal-bar {

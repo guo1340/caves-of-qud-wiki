@@ -94,6 +94,7 @@ global.window.WikiMeta = window.WikiMeta;
 const D = window.WikiData;
 const M = window.WikiMeta;
 const APP = require.resolve("./js/app.js");
+const PARTIAL_DIR = path.join(ROOT, "partials");
 
 function escAttr(s) {
   return String(s == null ? "" : s)
@@ -132,6 +133,17 @@ function renderMain(route) {
   require("./js/app.js");
   return els.main._html;
 }
+function partial(name) {
+  return fs.readFileSync(path.join(PARTIAL_DIR, name + ".html"), "utf8").trim();
+}
+function loadTemplate() {
+  return fs
+    .readFileSync(path.join(PARTIAL_DIR, "page-shell.html"), "utf8")
+    .replace("<!-- coq:header -->", partial("header"))
+    .replace("<!-- coq:left-sidebar -->", partial("left-sidebar"))
+    .replace("<!-- coq:right-sidebar -->", partial("right-sidebar"))
+    .replace("<!-- coq:footer -->", partial("footer"));
+}
 function headBlock(route) {
   const seo = M.seoFor(route);
   return (
@@ -168,16 +180,16 @@ function buildPage(template, route) {
   );
   const mainHtml = renderMain(route);
   html = html.replace(
-    /<aside class="left" id="leftNav">[\s\S]*?<\/aside>/,
-    '<aside class="left" id="leftNav">' + els.leftNav._html + "</aside>",
+    /<!-- coq:left-sidebar -->/,
+    els.leftNav._html,
   );
   html = html.replace(
-    /<aside class="right" id="rightNav">[\s\S]*?<\/aside>/,
-    '<aside class="right" id="rightNav">' + els.rightNav._html + "</aside>",
+    /<!-- coq:right-sidebar -->/,
+    els.rightNav._html,
   );
   html = html.replace(
-    /<main id="main">[\s\S]*?<\/main>/,
-    '<main id="main">' + mainHtml + "</main>",
+    /<!-- coq:main -->/,
+    mainHtml,
   );
   return cleanInternalLinks(html);
 }
@@ -205,8 +217,18 @@ function writeSitemap(allRoutes) {
     "utf8",
   );
 }
+function verifySitemapCoverage(allRoutes) {
+  const sitemap = fs.readFileSync(path.join(ROOT, "sitemap.xml"), "utf8");
+  const missing = allRoutes.filter((r) => {
+    const loc = D.site.baseUrl + (r === "/" ? "/" : r + "/");
+    return !sitemap.includes("<loc>" + loc + "</loc>");
+  });
+  if (missing.length) {
+    throw new Error("Sitemap missing routes: " + missing.join(", "));
+  }
+}
 function run() {
-  const template = fs.readFileSync(path.join(ROOT, "index.html"), "utf8");
+  const template = loadTemplate();
   const allRoutes = routes();
   allRoutes.forEach((route) => {
     const file = outPath(route);
@@ -214,6 +236,7 @@ function run() {
     fs.writeFileSync(file, buildPage(template, route), "utf8");
   });
   writeSitemap(allRoutes);
+  verifySitemapCoverage(allRoutes);
   console.log(
     "Static prerender complete: " + allRoutes.length + " HTML files generated.",
   );
